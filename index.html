@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Who Am I — Case File</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <span>Case File No. 07</span>
+        <h1>Who Am I?</h1>
+      </div>
+      <div class="agent-tag">
+        Agent<br/>
+        <strong id="agentName">—</strong>
+        <span id="scoreTag">Score: 0</span>
+      </div>
+    </div>
+
+    <div class="dossier" id="dossier">
+      <div class="tab">Classified</div>
+
+      <div class="photo-frame">
+        <img id="personImg" src="" alt="Redacted subject photo" />
+        <div class="no-photo hidden" id="noPhoto">No photo<br/>on file</div>
+        <div class="scrim" id="photoScrim"></div>
+        <div class="redact-strip top"></div>
+        <div class="redact-strip bottom"></div>
+      </div>
+      <div class="clip"></div>
+
+      <div class="case-meta">
+        <span id="caseCounter">Person 1</span>
+        <div class="attempts" id="attemptsDots"></div>
+      </div>
+
+      <div class="clue-tag">
+        <span class="clue-label">Clue <span id="clueIndex">01</span> / 05</span>
+        <div class="hint-dots" id="hintDots"></div>
+        <p id="clueText">Loading case file…</p>
+        <p class="name-mask hidden" id="nameMask"></p>
+      </div>
+
+      <div class="feedback" id="feedback"></div>
+
+      <div class="guess-row">
+        <input type="text" id="guessInput" placeholder="Type your guess…" autocomplete="off" />
+        <button class="btn" id="submitBtn">Submit</button>
+      </div>
+      <div class="actions-row">
+        <button class="btn secondary" id="prevHintBtn">← Previous</button>
+        <button class="btn secondary" id="nextHintBtn">Next Clue →</button>
+      </div>
+
+      <!-- Success overlay -->
+      <div class="stamp-overlay" id="successOverlay">
+        <div class="stamp solved">Solved</div>
+        <div class="reveal-name" id="successName"></div>
+        <div class="reveal-points" id="successPoints"></div>
+        <button class="btn" id="nextPersonBtn">Next Person →</button>
+      </div>
+
+      <!-- Fail overlay -->
+      <div class="stamp-overlay" id="failOverlay">
+        <div class="stamp closed">Case Closed</div>
+        <div class="reveal-name" id="failName"></div>
+        <div class="countdown" id="failCountdown">3</div>
+      </div>
+
+      <!-- End of dataset overlay -->
+      <div class="stamp-overlay end-screen" id="endOverlay">
+        <div class="stamp">File Complete</div>
+        <div class="reveal-name" id="endScore"></div>
+        <div class="end-message">You've been through every case on file. Can you crack them faster next round and beat your score?</div>
+        <button class="btn" id="playAgainBtn">Play Again</button>
+      </div>
+    </div>
+
+    <footer class="credit">Guess The Person — Phase 1 Prototype</footer>
+  </div>
+
+  <!-- Landing modal -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal">
+      <div class="badge-icon">ID</div>
+      <h2>Field Agent Registration</h2>
+      <p class="sub">Every investigator needs a codename. Yours has been assigned — edit it if you like.</p>
+      <label for="agentInput">Your codename</label>
+      <input type="text" id="agentInput" maxlength="28" />
+
+      <details class="rules">
+        <summary>How to play</summary>
+        <ul>
+          <li>5 clues per case, revealed one at a time.</li>
+          <li>One guess per clue — wrong guess, move on.</li>
+          <li>Final clue gives you 2 tries instead of 1.</li>
+          <li>3 wrong guesses total ends the case.</li>
+          <li>Guess fast for a speed bonus.</li>
+          <li>The photo won't help — go by the clues.</li>
+        </ul>
+      </details>
+
+      <button class="btn" id="proceedBtn">Begin Investigation →</button>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
