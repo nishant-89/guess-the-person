@@ -1,0 +1,3032 @@
+[
+  {
+    "_id": "person_001",
+    "name": "Sachin Tendulkar",
+    "aliases": [
+      "sachin tendulkar",
+      "sachin"
+    ],
+    "clues": [
+      "I am a religious figure.",
+      "It's really hard to say my name just once.",
+      "People compare me to a don.",
+      "I am the one who knocks.",
+      "I don't respect other people's boundaries."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/The_cricket_legend_Sachin_Tendulkar_at_the_Oval_Maidan_in_Mumbai_During_the_Duke_and_Duchess_of_Cambridge_Visit%2826271019082%29.jpg/330px-The_cricket_legend_Sachin_Tendulkar_at_the_Oval_Maidan_in_Mumbai_During_the_Duke_and_Duchess_of_Cambridge_Visit%2826271019082%29.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Cricketer"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "medium"
+    },
+    "fameScore": 98,
+    "era": ["Modern"],
+    "countryPopularity": ["India", "Global"],
+    "nicknames": ["Master Blaster", "Little Master"],
+    "tags": ["cricket", "batsman", "world-cup", "bharat-ratna", "sports-legend"],
+    "relatedPeople": ["person_002"],
+    "awards": ["Bharat Ratna", "Padma Vibhushan", "Rajiv Gandhi Khel Ratna"],
+    "activeYears": [1989, 2013],
+    "searchKeywords": ["master blaster", "little master", "god of cricket", "100 centuries", "straight drive"]
+  },
+  {
+    "_id": "person_002",
+    "name": "Mahendra Singh Dhoni",
+    "aliases": [
+      "mahendra singh dhoni",
+      "ms dhoni",
+      "dhoni"
+    ],
+    "clues": [
+      "I hate when people don't buy a ticket.",
+      "People think every year will be my last.",
+      "An overweight yellow man follows me everywhere I go.",
+      "It will take seven hints to understand me."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/MS_Dhoni_%28Prabhav_%2723_-_RiGI_2023%29.jpg/330px-MS_Dhoni_%28Prabhav_%2723_-_RiGI_2023%29.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Cricketer", "Wicketkeeper"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "medium"
+    },
+    "fameScore": 96,
+    "era": ["Modern"],
+    "countryPopularity": ["India", "Global"],
+    "nicknames": ["Captain Cool", "MSD", "Thala"],
+    "tags": ["cricket", "captain", "world-cup", "wicketkeeper", "ipl"],
+    "relatedPeople": ["person_001"],
+    "awards": ["Padma Bhushan", "Padma Shri", "Rajiv Gandhi Khel Ratna"],
+    "activeYears": [2004, 2020],
+    "searchKeywords": ["captain cool", "thala", "helicopter shot", "csk", "msd"]
+  },
+  {
+    "_id": "person_003",
+    "name": "Vishwanathan Anand",
+    "aliases": [
+      "vishwanathan anand",
+      "viswanathan anand",
+      "anand"
+    ],
+    "clues": [
+      "I have a very sedentary job.",
+      "Mere check kabhi bounce nahi hote (My checks never bounce).",
+      "Never let them know your next move.",
+      "It doesn't matter if you're black or white."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Viswanathan_Anand_%282016%29_%28cropped%29.jpeg/330px-Viswanathan_Anand_%282016%29_%28cropped%29.jpeg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Chess Player"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "medium",
+      "global": "medium"
+    },
+    "fameScore": 84,
+    "era": ["Modern"],
+    "countryPopularity": ["India", "Global"],
+    "nicknames": ["Vishy", "Tiger of Madras"],
+    "tags": ["chess", "grandmaster", "world-champion", "mind-sports"],
+    "relatedPeople": [],
+    "awards": ["Padma Vibhushan", "Padma Bhushan", "Rajiv Gandhi Khel Ratna"],
+    "activeYears": [1987, null],
+    "searchKeywords": ["vishy", "grandmaster", "world chess champion", "chess"]
+  },
+  {
+    "_id": "person_004",
+    "name": "Anurag Kashyap",
+    "aliases": [
+      "anurag kashyap"
+    ],
+    "clues": [
+      "Main kalki chinta nahi karta (I don't worry about tomorrow).",
+      "Influencers are ruining my favourite festival.",
+      "My social media is one battle after another.",
+      "I wish my brother would stfu."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Anurag_Kashyap_02.jpg/330px-Anurag_Kashyap_02.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Film",
+    "industryDomain": ["Film"],
+    "occupation": ["Director", "Writer", "Producer", "Actor"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "medium",
+      "global": "hard"
+    },
+    "fameScore": 77,
+    "era": ["Contemporary"],
+    "countryPopularity": ["India"],
+    "nicknames": [],
+    "tags": ["director", "bollywood", "indie-cinema", "screenwriter"],
+    "relatedPeople": [],
+    "awards": ["Filmfare Award"],
+    "activeYears": [1993, null],
+    "searchKeywords": ["gangs of wasseypur", "black friday", "director", "dev d"]
+  },
+  {
+    "_id": "person_005",
+    "name": "Ratan Tata",
+    "aliases": [
+      "ratan tata"
+    ],
+    "clues": [
+      "Bye bye.",
+      "I'm a minority with a majority stake.",
+      "Being my employee is every comedian's punchline.",
+      "Carrom ramvanu, juice peevanu, majjani life."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Shri_Ratan_Naval_Tata.jpg/330px-Shri_Ratan_Naval_Tata.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Business",
+    "industryDomain": ["Business", "Philanthropy"],
+    "occupation": ["Industrialist", "Businessman"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "medium"
+    },
+    "fameScore": 92,
+    "era": ["Modern"],
+    "countryPopularity": ["India", "Global"],
+    "nicknames": [],
+    "tags": ["tata", "business", "philanthropy", "automobile", "industry"],
+    "relatedPeople": [],
+    "awards": ["Padma Bhushan", "Padma Vibhushan"],
+    "activeYears": [1962, 2024],
+    "searchKeywords": ["tata", "nano", "jaguar land rover", "industrialist"]
+  },
+  {
+    "_id": "person_006",
+    "name": "Mamata Banerjee",
+    "aliases": [
+      "mamata banerjee",
+      "mamata"
+    ],
+    "clues": [
+      "Known to paint and play the piano.",
+      "Replaced the CPM (Red party) and avoided stepping into the Red 'Writers' Building'.",
+      "Wordplay on 'Nice Try Diddy'.",
+      "Kicked a football during a rally while handling a leg injury.",
+      "Only wears casual hawai chappals."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Ms._Mamata_Banerjee%2C_in_Kolkata_on_July_17%2C_2018_%28cropped%29.JPG/330px-Ms._Mamata_Banerjee%2C_in_Kolkata_on_July_17%2C_2018_%28cropped%29.JPG",
+    "gender": "female",
+    "nationality": ["Indian"],
+    "primaryDomain": "Politics",
+    "industryDomain": ["Politics"],
+    "occupation": ["Politician"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "medium",
+      "global": "hard"
+    },
+    "fameScore": 76,
+    "era": ["Contemporary"],
+    "countryPopularity": ["India"],
+    "nicknames": ["Didi"],
+    "tags": ["politics", "west-bengal", "chief-minister", "tmc"],
+    "relatedPeople": ["person_007"],
+    "awards": [],
+    "activeYears": [1984, null],
+    "searchKeywords": ["didi", "tmc", "west bengal", "chief minister"]
+  },
+  {
+    "_id": "person_007",
+    "name": "Rahul Gandhi",
+    "aliases": [
+      "rahul gandhi"
+    ],
+    "clues": [
+      "I have a love-hate relationship with the media.",
+      "No matter how old I get, people still treat me like a youth leader.",
+      "My cross-country walking tours became an internet sensation.",
+      "Mujhe toh nan khatai khani hai! Main nan khatai hi khaunga!"
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Rahul_Gandhi.png/330px-Rahul_Gandhi.png",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Politics",
+    "industryDomain": ["Politics"],
+    "occupation": ["Politician"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "hard"
+    },
+    "fameScore": 82,
+    "era": ["Contemporary"],
+    "countryPopularity": ["India"],
+    "nicknames": [],
+    "tags": ["politics", "congress", "mp", "bharat-jodo-yatra"],
+    "relatedPeople": ["person_010"],
+    "awards": [],
+    "activeYears": [2004, null],
+    "searchKeywords": ["congress", "bharat jodo yatra", "rahul", "leader of opposition"]
+  },
+  {
+    "_id": "person_008",
+    "name": "Stephen Hawking",
+    "aliases": [
+      "stephen hawking",
+      "hawking"
+    ],
+    "clues": [
+      "They see me rolling, they hating.",
+      "Battery life is very important to me.",
+      "I spent my life looking at the stars, but I'm not an astrologer.",
+      "I have a very distinctive, electronic voice."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Stephen_Hawking.StarChild.jpg",
+    "gender": "male",
+    "nationality": ["British"],
+    "primaryDomain": "Science",
+    "industryDomain": ["Science"],
+    "occupation": ["Physicist", "Cosmologist", "Author"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "medium",
+      "global": "easy"
+    },
+    "fameScore": 96,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": [],
+    "tags": ["physics", "black-holes", "cosmology", "science"],
+    "relatedPeople": [],
+    "awards": ["Copley Medal", "Presidential Medal of Freedom"],
+    "activeYears": [1962, 2018],
+    "searchKeywords": ["black holes", "brief history of time", "wheelchair", "cosmology"]
+  },
+  {
+    "_id": "person_009",
+    "name": "Ajay Devgn",
+    "aliases": [
+      "ajay devgn",
+      "ajay devgan"
+    ],
+    "clues": [
+      "I hate vowels.",
+      "I might lose my own lookalike contest.",
+      "Daane daane mein kesar ka dum.",
+      "I prefer standing on two moving cars rather than walking."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Ajay_Devgn_at_the_trailer_launch_of_Raid_2.jpg/330px-Ajay_Devgn_at_the_trailer_launch_of_Raid_2.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Film",
+    "industryDomain": ["Film"],
+    "occupation": ["Actor", "Producer", "Director"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "medium",
+      "global": "hard"
+    },
+    "fameScore": 80,
+    "era": ["Contemporary"],
+    "countryPopularity": ["India"],
+    "nicknames": [],
+    "tags": ["bollywood", "actor", "action", "national-award"],
+    "relatedPeople": [],
+    "awards": ["Padma Shri", "National Film Award"],
+    "activeYears": [1991, null],
+    "searchKeywords": ["singham", "drishyam", "raid", "golmaal"]
+  },
+  {
+    "_id": "person_010",
+    "name": "Mahatma Gandhi",
+    "aliases": [
+      "mahatma gandhi",
+      "gandhi",
+      "mohandas gandhi"
+    ],
+    "clues": [
+      "I was one of the first people to try intermittent fasting.",
+      "My accessory choices inspired modern streetwear spectacles.",
+      "I made walking a form of national protest."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg/330px-Mahatma-Gandhi%2C_studio%2C_1931.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Politics",
+    "industryDomain": ["Politics", "History", "Social Activism"],
+    "occupation": ["Lawyer", "Freedom Fighter"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "easy"
+    },
+    "fameScore": 100,
+    "era": ["Historical"],
+    "countryPopularity": ["India", "Global"],
+    "nicknames": ["Bapu", "Father of the Nation"],
+    "tags": ["freedom-fighter", "india", "non-violence", "independence"],
+    "relatedPeople": ["person_007"],
+    "awards": [],
+    "activeYears": [1893, 1948],
+    "searchKeywords": ["bapu", "salt march", "non violence", "father of nation", "quit india"]
+  },
+  {
+    "_id": "person_011",
+    "name": "Cristiano Ronaldo",
+    "aliases": [
+      "cristiano ronaldo",
+      "ronaldo",
+      "cr7"
+    ],
+    "clues": [
+      "I've perfected the art of standing perfectly still before doing something loud.",
+      "My son and I share more than a house — we share a name too.",
+      "I built a museum in my hometown, and it's not for someone else.",
+      "Vegetables and rest days are basically my religion.",
+      "There are two of us fighting for the same throne, and he plays for Argentina."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg/330px-Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg",
+    "gender": "male",
+    "nationality": ["Portuguese"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Footballer"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "easy"
+    },
+    "fameScore": 100,
+    "era": ["Contemporary"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["CR7"],
+    "tags": ["football", "ballon-dor", "champions-league", "real-madrid", "portugal"],
+    "relatedPeople": ["person_012"],
+    "awards": ["Ballon d'Or", "UEFA Men's Player of the Year"],
+    "activeYears": [2002, null],
+    "searchKeywords": ["cr7", "siuu", "real madrid", "al nassr", "portugal", "goat"]
+  },
+  {
+    "_id": "person_012",
+    "name": "Lionel Messi",
+    "aliases": [
+      "lionel messi",
+      "messi",
+      "leo messi"
+    ],
+    "clues": [
+      "I left my home country as a kid to fix a growth problem.",
+      "Eight trophies have my name on them, and people still argue if I deserve them.",
+      "My country waited 36 years for me to end their drought.",
+      "I'm quiet off the field, loud with my feet.",
+      "A flea grew up to become a giant."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg/330px-Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg",
+    "gender": "male",
+    "nationality": ["Argentine"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Footballer"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "easy"
+    },
+    "fameScore": 100,
+    "era": ["Contemporary"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["Leo", "La Pulga"],
+    "tags": ["football", "world-cup", "ballon-dor", "barcelona", "argentina"],
+    "relatedPeople": ["person_011"],
+    "awards": ["Ballon d'Or", "FIFA World Cup Golden Ball"],
+    "activeYears": [2004, null],
+    "searchKeywords": ["leo", "la pulga", "barcelona", "inter miami", "argentina", "goat"]
+  },
+  {
+    "_id": "person_013",
+    "name": "Michael Jackson",
+    "aliases": [
+      "michael jackson",
+      "mj"
+    ],
+    "clues": [
+      "I moonwalked before it was a meme.",
+      "My glove had only one job, and it did it well.",
+      "I turned red eyes and a graveyard into a dance floor.",
+      "A chimpanzee was basically my roommate.",
+      "My ranch had more rides than some theme parks."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Michael_Jackson_1983_%283x4_cropped%29_%28contrast%29.jpg/330px-Michael_Jackson_1983_%283x4_cropped%29_%28contrast%29.jpg",
+    "gender": "male",
+    "nationality": ["American"],
+    "primaryDomain": "Music",
+    "industryDomain": ["Music", "Dance"],
+    "occupation": ["Singer", "Songwriter", "Dancer"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "medium",
+      "global": "easy"
+    },
+    "fameScore": 99,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["King of Pop"],
+    "tags": ["music", "pop", "moonwalk", "grammy", "dance"],
+    "relatedPeople": [],
+    "awards": ["Grammy Legend Award", "Grammy Lifetime Achievement Award"],
+    "activeYears": [1964, 2009],
+    "searchKeywords": ["king of pop", "moonwalk", "thriller", "billie jean", "neverland"]
+  },
+  {
+    "_id": "person_014",
+    "name": "Barack Obama",
+    "aliases": [
+      "barack obama",
+      "obama"
+    ],
+    "clues": [
+      "My name means 'blessed' in Swahili, but I didn't pick it.",
+      "I wrote bestsellers before and after my time in a big white house.",
+      "My daughters grew up with a dog that outlasted my time in office.",
+      "I picked up a Grammy for reading, not singing.",
+      "My better half's arms became a fashion topic during my entire term."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/330px-President_Barack_Obama.jpg",
+    "gender": "male",
+    "nationality": ["American"],
+    "primaryDomain": "Politics",
+    "industryDomain": ["Politics"],
+    "occupation": ["Politician", "Lawyer", "Author"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "medium",
+      "global": "easy"
+    },
+    "fameScore": 97,
+    "era": ["Contemporary"],
+    "countryPopularity": ["Global"],
+    "nicknames": [],
+    "tags": ["president", "usa", "nobel-peace-prize", "democratic-party"],
+    "relatedPeople": [],
+    "awards": ["Nobel Peace Prize", "Grammy Award"],
+    "activeYears": [1996, null],
+    "searchKeywords": ["44th president", "white house", "yes we can", "michelle obama"]
+  },
+  {
+    "_id": "person_015",
+    "name": "Elon Musk",
+    "aliases": [
+      "elon musk",
+      "musk"
+    ],
+    "clues": [
+      "I've named a kid something that looks like a password.",
+      "I promised tunnels under traffic, then actually dug one.",
+      "I once owned a website named after a single letter, twice in my life.",
+      "Cars, rockets, and diggers all answer to me.",
+      "I turned a blue bird's home into a single letter."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Elon_Musk_-_54820081119_%28cropped%29.jpg/330px-Elon_Musk_-_54820081119_%28cropped%29.jpg",
+    "gender": "male",
+    "nationality": ["South African", "Canadian", "American"],
+    "primaryDomain": "Technology",
+    "industryDomain": ["Technology", "Business"],
+    "occupation": ["Entrepreneur", "Engineer", "Investor"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "easy"
+    },
+    "fameScore": 99,
+    "era": ["Contemporary"],
+    "countryPopularity": ["Global"],
+    "nicknames": [],
+    "tags": ["tesla", "spacex", "x", "ai", "technology"],
+    "relatedPeople": ["person_017"],
+    "awards": [],
+    "activeYears": [1995, null],
+    "searchKeywords": ["tesla", "spacex", "starlink", "twitter", "x", "neuralink"]
+  },
+  {
+    "_id": "person_016",
+    "name": "Taylor Swift",
+    "aliases": [
+      "taylor swift"
+    ],
+    "clues": [
+      "I write breakup songs like tax filings — annually, with receipts.",
+      "My ex-boyfriends should really unionize.",
+      "I re-recorded my own homework just to own it properly.",
+      "My cat could probably run a small country by now.",
+      "Stadiums sell out before I've even announced the setlist."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_%283%29.png/330px-Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_%283%29.png",
+    "gender": "female",
+    "nationality": ["American"],
+    "primaryDomain": "Music",
+    "industryDomain": ["Music"],
+    "occupation": ["Singer", "Songwriter"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "medium",
+      "global": "easy"
+    },
+    "fameScore": 98,
+    "era": ["Contemporary"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["T-Swift"],
+    "tags": ["music", "pop", "grammy", "eras-tour", "songwriter"],
+    "relatedPeople": [],
+    "awards": ["Grammy Award", "American Music Award"],
+    "activeYears": [2004, null],
+    "searchKeywords": ["eras tour", "swiftie", "blank space", "love story", "1989"]
+  },
+  {
+    "_id": "person_017",
+    "name": "Steve Jobs",
+    "aliases": [
+      "steve jobs",
+      "jobs"
+    ],
+    "clues": [
+      "I got fired from the company I started, then came back to save it.",
+      "My biological sister writes novels; I wrote software.",
+      "I wore the same outfit daily so I'd never have to think about it.",
+      "I named a computer after a fruit I was maybe eating too much of.",
+      "My last words became a mystery philosophers still argue about."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Steve_Jobs_Headshot_2010_%28cropped_4%29.jpg/330px-Steve_Jobs_Headshot_2010_%28cropped_4%29.jpg",
+    "gender": "male",
+    "nationality": ["American"],
+    "primaryDomain": "Technology",
+    "industryDomain": ["Technology", "Business"],
+    "occupation": ["Entrepreneur", "Inventor", "Businessman"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "medium",
+      "global": "easy"
+    },
+    "fameScore": 98,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": [],
+    "tags": ["apple", "iphone", "pixar", "innovation", "technology"],
+    "relatedPeople": ["person_015"],
+    "awards": ["National Medal of Technology"],
+    "activeYears": [1976, 2011],
+    "searchKeywords": ["apple", "iphone", "macintosh", "pixar", "think different"]
+  },
+  {
+    "_id": "person_018",
+    "name": "Marilyn Monroe",
+    "aliases": [
+      "marilyn monroe",
+      "norma jeane"
+    ],
+    "clues": [
+      "I was blonde by choice, not by birth.",
+      "A president once got serenaded by me in front of thousands.",
+      "My skirt had a moment with a subway grate that outlived me.",
+      "I started as a photograph in a factory, literally.",
+      "My name was borrowed and reinvented before it became legendary."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Monroecirca1953.jpg/330px-Monroecirca1953.jpg",
+    "gender": "female",
+    "nationality": ["American"],
+    "primaryDomain": "Film",
+    "industryDomain": ["Film", "Modeling"],
+    "occupation": ["Actress", "Model", "Singer"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "hard",
+      "global": "medium"
+    },
+    "fameScore": 91,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": [],
+    "tags": ["hollywood", "actress", "model", "fashion-icon"],
+    "relatedPeople": [],
+    "awards": ["Golden Globe Award"],
+    "activeYears": [1945, 1962],
+    "searchKeywords": ["hollywood icon", "some like it hot", "norma jeane", "blonde"]
+  },
+  {
+    "_id": "person_019",
+    "name": "Muhammad Ali",
+    "aliases": [
+      "muhammad ali",
+      "cassius clay"
+    ],
+    "clues": [
+      "I changed my name and my religion in the same breath.",
+      "I floated and stung, according to my own poetry.",
+      "I refused to fight a war and lost years of my career for it.",
+      "My hands were faster than most people's excuses.",
+      "A disease took my voice, but not my legacy."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Muhammad_Ali_NYWTS.jpg/330px-Muhammad_Ali_NYWTS.jpg",
+    "gender": "male",
+    "nationality": ["American"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Boxer"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "medium",
+      "global": "easy"
+    },
+    "fameScore": 97,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["The Greatest"],
+    "tags": ["boxing", "heavyweight", "olympics", "sports-legend"],
+    "relatedPeople": [],
+    "awards": ["Presidential Medal of Freedom"],
+    "activeYears": [1960, 1981],
+    "searchKeywords": ["float like a butterfly", "sting like a bee", "cassius clay", "boxing"]
+  },
+  {
+    "_id": "person_020",
+    "name": "Nelson Mandela",
+    "aliases": [
+      "nelson mandela",
+      "mandela"
+    ],
+    "clues": [
+      "An island held me longer than most people's entire careers last.",
+      "I walked out of prison and into a presidency.",
+      "My prisoner number became more famous than most people's actual names.",
+      "I forgave the people who locked me up, on television, for everyone to see.",
+      "My birthday is now a global day of doing good for others."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/330px-Nelson_Mandela_1994.jpg",
+    "gender": "male",
+    "nationality": ["South African"],
+    "primaryDomain": "Politics",
+    "industryDomain": ["Politics", "Social Activism"],
+    "occupation": ["Politician", "Anti-Apartheid Activist"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "medium",
+      "global": "easy"
+    },
+    "fameScore": 96,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["Madiba"],
+    "tags": ["anti-apartheid", "president", "nobel-peace-prize", "human-rights"],
+    "relatedPeople": [],
+    "awards": ["Nobel Peace Prize", "Bharat Ratna"],
+    "activeYears": [1944, 1999],
+    "searchKeywords": ["madiba", "apartheid", "27 years prison", "south africa", "46664"]
+  },
+  {
+    "_id": "person_021",
+    "name": "Queen Elizabeth II",
+    "aliases": [
+      "queen elizabeth ii",
+      "queen elizabeth",
+      "elizabeth ii"
+    ],
+    "clues": [
+      "I outlasted more prime ministers than most people meet bosses.",
+      "Corgis had better job security in my house than most employees.",
+      "I never technically needed a passport or a driver's license.",
+      "My face was on money before most people's grandparents were born.",
+      "My reign lasted longer than most countries' current constitutions."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Queen_Elizabeth_II_official_portrait_for_1959_tour_%28retouched%29_%28cropped%29_%283-to-4_aspect_ratio%29.jpg/330px-Queen_Elizabeth_II_official_portrait_for_1959_tour_%28retouched%29_%28cropped%29_%283-to-4_aspect_ratio%29.jpg",
+    "gender": "female",
+    "nationality": ["British"],
+    "primaryDomain": "Royalty",
+    "industryDomain": ["Royalty", "Politics"],
+    "occupation": ["Queen", "Head of State"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "medium",
+      "global": "easy"
+    },
+    "fameScore": 98,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["Her Majesty"],
+    "tags": ["royalty", "british-monarchy", "queen", "commonwealth"],
+    "relatedPeople": [],
+    "awards": [],
+    "activeYears": [1952, 2022],
+    "searchKeywords": ["queen", "buckingham palace", "corgis", "commonwealth", "british monarchy"]
+  },
+  {
+    "_id": "person_022",
+    "name": "Kobe Bryant",
+    "aliases": [
+      "kobe bryant",
+      "kobe"
+    ],
+    "clues": [
+      "A snake's name became mine on the court.",
+      "I skipped college and went straight for the big leagues.",
+      "Five rings didn't stop me from wanting a sixth.",
+      "My daughter and I left together, far too soon.",
+      "I wrote and won an award after I stopped playing."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Kobe_Bryant_Dec_2014.jpg/330px-Kobe_Bryant_Dec_2014.jpg",
+    "gender": "male",
+    "nationality": ["American"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Basketball Player"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "hard",
+      "global": "easy"
+    },
+    "fameScore": 94,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["Black Mamba"],
+    "tags": ["basketball", "nba", "lakers", "olympics"],
+    "relatedPeople": [],
+    "awards": ["NBA MVP", "Academy Award"],
+    "activeYears": [1996, 2016],
+    "searchKeywords": ["black mamba", "lakers", "nba", "dear basketball", "mamba mentality"]
+  },
+  {
+    "_id": "person_023",
+    "name": "Freddie Mercury",
+    "aliases": [
+      "freddie mercury",
+      "farrokh bulsara"
+    ],
+    "clues": [
+      "I was born on an island before this stage name ever existed.",
+      "Four minutes of opera, rock, and ballad somehow became one song.",
+      "My extra teeth supposedly gave me an extra octave.",
+      "A stadium in London watched me own it, one summer afternoon.",
+      "My cats had names longer than most people's job titles."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Freddie_Mercury_performing_in_New_Haven%2C_CT%2C_November_1977.jpg/330px-Freddie_Mercury_performing_in_New_Haven%2C_CT%2C_November_1977.jpg",
+    "gender": "male",
+    "nationality": ["British"],
+    "primaryDomain": "Music",
+    "industryDomain": ["Music"],
+    "occupation": ["Singer", "Songwriter"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "medium",
+      "global": "medium"
+    },
+    "fameScore": 95,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": [],
+    "tags": ["queen-band", "rock", "live-aid", "music"],
+    "relatedPeople": [],
+    "awards": ["Grammy Lifetime Achievement Award"],
+    "activeYears": [1970, 1991],
+    "searchKeywords": ["queen band", "bohemian rhapsody", "we will rock you", "live aid"]
+  },
+  {
+    "_id": "person_024",
+    "name": "Lata Mangeshkar",
+    "aliases": [
+      "lata mangeshkar"
+    ],
+    "clues": [
+      "Thousands of songs, one voice, zero repeats of style.",
+      "I sang for heroines decades apart in age, and none of them noticed the gap.",
+      "A country gave me its highest civilian honor for just singing.",
+      "I never needed a husband to be called the nation's voice.",
+      "My silence, on the rare day I didn't sing, made headlines."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Lata-Mangeshkar.jpg/330px-Lata-Mangeshkar.jpg",
+    "gender": "female",
+    "nationality": ["Indian"],
+    "primaryDomain": "Music",
+    "industryDomain": ["Music", "Film"],
+    "occupation": ["Playback Singer"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "hard"
+    },
+    "fameScore": 93,
+    "era": ["Modern"],
+    "countryPopularity": ["India"],
+    "nicknames": ["Nightingale of India"],
+    "tags": ["playback-singer", "bollywood", "bharat-ratna", "music"],
+    "relatedPeople": [],
+    "awards": ["Bharat Ratna", "Padma Vibhushan", "Dadasaheb Phalke Award"],
+    "activeYears": [1942, 2022],
+    "searchKeywords": ["nightingale of india", "playback singer", "bharat ratna", "lata didi"]
+  },
+  {
+    "_id": "person_025",
+    "name": "Shah Rukh Khan",
+    "aliases": [
+      "shah rukh khan",
+      "srk"
+    ],
+    "clues": [
+      "My arms are wider open than most people's hearts.",
+      "I own a house named after a wish, not a person.",
+      "Airports know me as much for delays as for movies.",
+      "I played a man whose name my fans now call me by.",
+      "Romance became my full-time job description."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Shah_Rukh_Khan_graces_the_launch_of_the_new_Santro.jpg/330px-Shah_Rukh_Khan_graces_the_launch_of_the_new_Santro.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Film",
+    "industryDomain": ["Film"],
+    "occupation": ["Actor", "Producer"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "medium"
+    },
+    "fameScore": 98,
+    "era": ["Contemporary"],
+    "countryPopularity": ["India", "Global"],
+    "nicknames": ["SRK", "King Khan", "Baadshah of Bollywood"],
+    "tags": ["bollywood", "actor", "romance", "film"],
+    "relatedPeople": ["person_026"],
+    "awards": ["Padma Shri", "Filmfare Award"],
+    "activeYears": [1989, null],
+    "searchKeywords": ["srk", "king khan", "mannat", "ddlj", "pathaan", "jawan"]
+  },
+  {
+    "_id": "person_026",
+    "name": "Priyanka Chopra",
+    "aliases": [
+      "priyanka chopra",
+      "priyanka chopra jonas"
+    ],
+    "clues": [
+      "I wore a crown over a decade before I wore a wedding ring.",
+      "My husband is part of a boy band that grew up alongside its fans.",
+      "I collect film industries the way others collect passport stamps.",
+      "A TV agent's badge was fake, but my fanbase was real.",
+      "I sang before I acted, though most people forgot that part."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Priyanka_Chopra_at_Bulgary_launch%2C_2024_%28cropped%29.jpg",
+    "gender": "female",
+    "nationality": ["Indian"],
+    "primaryDomain": "Film",
+    "industryDomain": ["Film", "Music", "Modeling"],
+    "occupation": ["Actress", "Producer", "Model"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "medium",
+      "global": "medium"
+    },
+    "fameScore": 89,
+    "era": ["Contemporary"],
+    "countryPopularity": ["India", "Global"],
+    "nicknames": ["PC"],
+    "tags": ["bollywood", "hollywood", "miss-world", "actor"],
+    "relatedPeople": ["person_025"],
+    "awards": ["Padma Shri", "Miss World 2000"],
+    "activeYears": [2000, null],
+    "searchKeywords": ["pc", "quantico", "citadel", "miss world", "nick jonas"]
+  },
+  {
+    "_id": "person_027",
+    "name": "Serena Williams",
+    "aliases": [
+      "serena williams"
+    ],
+    "clues": [
+      "My sister and I turned family dinners into Grand Slam finals.",
+      "I retired, then insisted on calling it an 'evolution' instead.",
+      "Motherhood didn't slow my trophy count for long.",
+      "Opponents feared my serve more than they feared each other.",
+      "I designed clothes as fiercely as I played points."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Guests_at_the_2026_Met_Gala_209_%28cropped%29.jpg/330px-Guests_at_the_2026_Met_Gala_209_%28cropped%29.jpg",
+    "gender": "female",
+    "nationality": ["American"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Tennis Player"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "medium",
+      "global": "easy"
+    },
+    "fameScore": 95,
+    "era": ["Contemporary"],
+    "countryPopularity": ["Global"],
+    "nicknames": [],
+    "tags": ["tennis", "grand-slam", "olympics", "sports-legend"],
+    "relatedPeople": [],
+    "awards": ["Laureus World Sports Award"],
+    "activeYears": [1995, 2022],
+    "searchKeywords": ["grand slam", "venus williams", "us open", "tennis"]
+  },
+  {
+    "_id": "person_028",
+    "name": "Usain Bolt",
+    "aliases": [
+      "usain bolt",
+      "bolt"
+    ],
+    "clues": [
+      "I posed like I was shooting an arrow every time I won.",
+      "Nine seconds made me a legend, give or take.",
+      "My nickname is basically a weather warning.",
+      "I ran so fast, some people forgot to check if I was even trying.",
+      "Retirement didn't stop the world from measuring speed against me."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Usain_Bolt_smiling_Berlin_2009.JPG/330px-Usain_Bolt_smiling_Berlin_2009.JPG",
+    "gender": "male",
+    "nationality": ["Jamaican"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Sprinter"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "easy"
+    },
+    "fameScore": 97,
+    "era": ["Contemporary"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["Lightning Bolt"],
+    "tags": ["athletics", "100m", "olympics", "world-record"],
+    "relatedPeople": [],
+    "awards": ["Laureus World Sports Award"],
+    "activeYears": [2004, 2017],
+    "searchKeywords": ["lightning bolt", "100m", "9.58", "jamaica", "fastest man"]
+  },
+  {
+    "_id": "person_029",
+    "name": "Albert Einstein",
+    "aliases": [
+      "albert einstein",
+      "einstein"
+    ],
+    "clues": [
+      "My tongue is more famous than most of my equations.",
+      "A patent office paid my bills before the world paid attention to my theories.",
+      "My brain was stolen after I died, literally.",
+      "One simple equation made me a household name, even to people who can't explain it.",
+      "I turned down becoming a president, once offered the job."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Albert_Einstein_Head_cleaned.jpg/330px-Albert_Einstein_Head_cleaned.jpg",
+    "gender": "male",
+    "nationality": ["German", "Swiss", "American"],
+    "primaryDomain": "Science",
+    "industryDomain": ["Science"],
+    "occupation": ["Physicist"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "easy"
+    },
+    "fameScore": 100,
+    "era": ["Historical"],
+    "countryPopularity": ["Global"],
+    "nicknames": [],
+    "tags": ["physics", "relativity", "nobel-prize", "science"],
+    "relatedPeople": ["person_008"],
+    "awards": ["Nobel Prize in Physics"],
+    "activeYears": [1900, 1955],
+    "searchKeywords": ["e equals mc squared", "relativity", "nobel prize", "physicist"]
+  },
+  {
+    "_id": "person_030",
+    "name": "Steve Irwin",
+    "aliases": [
+      "steve irwin",
+      "the crocodile hunter"
+    ],
+    "clues": [
+      "Crocodiles were basically my coworkers.",
+      "My last words to camera were as cheerful as my first.",
+      "A stingray ended a story that snakes and crocs never could.",
+      "My daughter continues the family business, khaki and all.",
+      "Every sentence I spoke sounded like it ended in an exclamation mark."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Steve_Irwin_December_2005_%284x5_cropped%29.jpg/330px-Steve_Irwin_December_2005_%284x5_cropped%29.jpg",
+    "gender": "male",
+    "nationality": ["Australian"],
+    "primaryDomain": "Wildlife",
+    "industryDomain": ["Wildlife", "Television"],
+    "occupation": ["Conservationist", "Television Presenter"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "hard",
+      "global": "medium"
+    },
+    "fameScore": 88,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["The Crocodile Hunter"],
+    "tags": ["wildlife", "animals", "television", "conservation"],
+    "relatedPeople": [],
+    "awards": ["Queensland Greats Award"],
+    "activeYears": [1991, 2006],
+    "searchKeywords": ["crocodile hunter", "stingray", "australia zoo", "wildlife"]
+  },
+  {
+    "_id": "person_031",
+    "name": "Virat Kohli",
+    "aliases": [
+      "virat kohli",
+      "kohli"
+    ],
+    "clues": [
+      "My surname is basically eyeliner missing its last letter.",
+      "My teammates gave me a fruit's name instead of using my own.",
+      "I share my living room with one of Bollywood's leading ladies — no set visits, please.",
+      "Sugar and I broke up long before it became a wellness trend.",
+      "My team's fans waited two decades for an ending better than most Bollywood scripts."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg/330px-Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Cricketer"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "medium"
+    },
+    "fameScore": 98,
+    "era": ["Contemporary"],
+    "countryPopularity": ["India", "Global"],
+    "nicknames": ["King Kohli", "Cheeku"],
+    "tags": ["cricket", "india", "ipl", "batsman"],
+    "relatedPeople": ["person_001", "person_002"],
+    "awards": ["Arjuna Award", "Padma Shri", "Rajiv Gandhi Khel Ratna"],
+    "activeYears": [2008, null],
+    "searchKeywords": ["king kohli", "cheeku", "rcb", "india cricket", "anushka sharma"]
+  },
+  {
+    "_id": "person_032",
+    "name": "A.R. Rahman",
+    "aliases": [
+      "a.r. rahman",
+      "ar rahman",
+      "rahman",
+      "allah rakha rahman"
+    ],
+    "clues": [
+      "I introduced myself to the world twice, under two different names.",
+      "My new name came from a spiritual source, not from where you'd expect.",
+      "I've been called the Mozart of a city that isn't Vienna.",
+      "My piano skills started before I could tie my own shoelaces.",
+      "I've thanked the Academy twice in one lifetime — never once for acting."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/AR_Rahman_at_Premier_Futsal_Press_Meet_%28cropped%29.jpg/330px-AR_Rahman_at_Premier_Futsal_Press_Meet_%28cropped%29.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Music",
+    "industryDomain": ["Music", "Film"],
+    "occupation": ["Composer", "Singer", "Music Producer"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "medium"
+    },
+    "fameScore": 94,
+    "era": ["Contemporary"],
+    "countryPopularity": ["India", "Global"],
+    "nicknames": ["Mozart of Madras"],
+    "tags": ["music", "oscar", "composer", "bollywood"],
+    "relatedPeople": ["person_024"],
+    "awards": ["Academy Award", "Grammy Award", "Padma Bhushan"],
+    "activeYears": [1987, null],
+    "searchKeywords": ["mozart of madras", "slumdog millionaire", "jai ho", "oscar", "music"]
+  },
+  {
+    "_id": "person_033",
+    "name": "Amitabh Bachchan",
+    "aliases": [
+      "amitabh bachchan",
+      "big b"
+    ],
+    "clues": [
+      "Every night, I turn strangers' general knowledge into rent money.",
+      "I once owed more money than most people see in a lifetime, then paid it back myself.",
+      "My daughter-in-law was crowned before she ever joined the family.",
+      "Written off in my 40s, I became the industry's biggest star all over again in my 60s.",
+      "Brands pay just to borrow ten seconds of my voice."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Indian_actor_Amitabh_Bachchan.jpg/330px-Indian_actor_Amitabh_Bachchan.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Film",
+    "industryDomain": ["Film", "Television"],
+    "occupation": ["Actor", "Television Host", "Producer"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "hard"
+    },
+    "fameScore": 98,
+    "era": ["Modern", "Contemporary"],
+    "countryPopularity": ["India"],
+    "nicknames": ["Big B", "Shahenshah"],
+    "tags": ["bollywood", "actor", "kbc", "legend"],
+    "relatedPeople": ["person_025"],
+    "awards": ["Padma Vibhushan", "Dadasaheb Phalke Award"],
+    "activeYears": [1969, null],
+    "searchKeywords": ["big b", "kbc", "shahenshah", "angry young man", "amitabh"]
+  },
+  {
+    "_id": "person_034",
+    "name": "Kapil Dev",
+    "aliases": [
+      "kapil dev"
+    ],
+    "clues": [
+      "I captained a team of underdogs to a trophy nobody expected them to win.",
+      "My highest score in a World Cup innings exists only in memory — no cameras were rolling.",
+      "I swung the bat and the ball with equal menace.",
+      "A tobacco brand once used my face, and I've spent years trying to live it down.",
+      "I turned a rank underdog nation into world champions, decades before it became a habit."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kapil_Dev_at_Equation_sports_auction_%283x4_cropped%29.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Cricketer"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "easy",
+      "global": "hard"
+    },
+    "fameScore": 91,
+    "era": ["Modern"],
+    "countryPopularity": ["India"],
+    "nicknames": ["Haryana Hurricane"],
+    "tags": ["cricket", "1983 world cup", "captain", "all-rounder"],
+    "relatedPeople": ["person_035", "person_001"],
+    "awards": ["Padma Bhushan", "Wisden Cricketer of the Year"],
+    "activeYears": [1978, 1994],
+    "searchKeywords": ["1983 world cup", "haryana hurricane", "175 zimbabwe", "captain"]
+  },
+  {
+    "_id": "person_035",
+    "name": "Sunil Gavaskar",
+    "aliases": [
+      "sunil gavaskar",
+      "sunny gavaskar"
+    ],
+    "clues": [
+      "I opened batting so well, bowlers considered retirement.",
+      "A song was written about my batting before rap was cool in India.",
+      "I wore a skull cap for protection before helmets were fashionable.",
+      "Ten thousand runs felt like a formality by the time I retired.",
+      "Commentary boxes became my second home after my bat retired."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Anu_Ranjan%2C_Amruta_Fadnavis%2C_Sunil_Gavaskar%2C_Shashi_Ranjan_graces_the_Gr8_Beti_event_%2802%29_%28cropped_-_Gavaskar%29.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Cricketer", "Commentator"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "medium",
+      "global": "hard"
+    },
+    "fameScore": 88,
+    "era": ["Modern"],
+    "countryPopularity": ["India"],
+    "nicknames": ["Sunny"],
+    "tags": ["cricket", "commentator", "opening batsman"],
+    "relatedPeople": ["person_034", "person_001"],
+    "awards": ["Padma Bhushan"],
+    "activeYears": [1971, 1987],
+    "searchKeywords": ["sunny", "10000 test runs", "commentator", "little master"]
+  },
+  {
+    "_id": "person_036",
+    "name": "P.V. Sindhu",
+    "aliases": [
+      "pv sindhu",
+      "p.v. sindhu",
+      "sindhu"
+    ],
+    "clues": [
+      "Shuttlecocks fear my smash more than my opponents do.",
+      "I brought home Olympic silver, then upgraded the color next time.",
+      "My sport involves a racket, but not the criminal kind.",
+      "Hyderabad cheers loudest when I'm on court.",
+      "I've medaled at the Olympics more times than most Indian athletes combined."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/NAC_Jewellers_Honors_Olympic_Silver_Medalist_PV_Sindhu.jpg/330px-NAC_Jewellers_Honors_Olympic_Silver_Medalist_PV_Sindhu.jpg",
+    "gender": "female",
+    "nationality": ["Indian"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Badminton Player"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "medium"
+    },
+    "fameScore": 91,
+    "era": ["Contemporary"],
+    "countryPopularity": ["India", "Asia"],
+    "nicknames": [],
+    "tags": ["badminton", "olympics", "world champion"],
+    "relatedPeople": [],
+    "awards": ["Padma Bhushan", "Rajiv Gandhi Khel Ratna"],
+    "activeYears": [2012, null],
+    "searchKeywords": ["badminton", "olympic silver", "world champion", "hyderabad"]
+  },
+  {
+    "_id": "person_037",
+    "name": "Mary Kom",
+    "aliases": [
+      "mary kom",
+      "mc mary kom"
+    ],
+    "clues": [
+      "Six world titles, and I still had to prove I existed.",
+      "Motherhood didn't stop my fists from earning medals.",
+      "A biopic borrowed my face, played by someone who doesn't look like me.",
+      "My gloves have traveled farther than most people's passports.",
+      "Boxing rings became my home state's pride, thanks to me."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mary_Kom_-_British_High_Commission%2C_Delhi%2C_27_July_2011.jpg/330px-Mary_Kom_-_British_High_Commission%2C_Delhi%2C_27_July_2011.jpg",
+    "gender": "female",
+    "nationality": ["Indian"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Boxer"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "medium",
+      "global": "hard"
+    },
+    "fameScore": 87,
+    "era": ["Contemporary"],
+    "countryPopularity": ["India"],
+    "nicknames": ["Magnificent Mary"],
+    "tags": ["boxing", "olympics", "world champion"],
+    "relatedPeople": [],
+    "awards": ["Padma Vibhushan", "Rajiv Gandhi Khel Ratna"],
+    "activeYears": [2000, 2022],
+    "searchKeywords": ["magnificent mary", "boxing", "manipur", "olympic bronze"]
+  },
+  {
+    "_id": "person_038",
+    "name": "Milkha Singh",
+    "aliases": [
+      "milkha singh",
+      "the flying sikh"
+    ],
+    "clues": [
+      "A nation calls me 'flying', though I never boarded a plane for it.",
+      "Partition took my family before I ever won a race.",
+      "I lost an Olympic medal by a fraction of a second, forever haunted by it.",
+      "My life got a Bollywood makeover, title included my nickname.",
+      "Pakistan gave me a title fit for royalty after I outran their best."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Milkha_Singh.jpg/330px-Milkha_Singh.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Sprinter"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "easy",
+      "global": "hard"
+    },
+    "fameScore": 89,
+    "era": ["Modern"],
+    "countryPopularity": ["India"],
+    "nicknames": ["The Flying Sikh"],
+    "tags": ["athletics", "olympics", "running"],
+    "relatedPeople": ["person_028"],
+    "awards": ["Padma Shri"],
+    "activeYears": [1955, 1964],
+    "searchKeywords": ["flying sikh", "bhaag milkha bhaag", "400m", "partition"]
+  },
+  {
+    "_id": "person_039",
+    "name": "Diego Maradona",
+    "aliases": [
+      "diego maradona",
+      "maradona"
+    ],
+    "clues": [
+      "My hand did something illegal, and I blamed a deity for it.",
+      "Five defenders weren't enough to stop one run I made in 1986.",
+      "Naples worshipped me like a saint, murals and all.",
+      "My battles were as much with substances as with opponents.",
+      "A country's football history is split into before-me and after-me."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Argentina_celebrando_copa_%28cropped%29.jpg/330px-Argentina_celebrando_copa_%28cropped%29.jpg",
+    "gender": "male",
+    "nationality": ["Argentine"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Footballer"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "hard",
+      "global": "easy"
+    },
+    "fameScore": 97,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["El Diego"],
+    "tags": ["football", "world cup", "argentina", "napoli"],
+    "relatedPeople": ["person_012", "person_040"],
+    "awards": ["FIFA Player of the 20th Century"],
+    "activeYears": [1976, 1997],
+    "searchKeywords": ["hand of god", "1986 world cup", "napoli", "argentina"]
+  },
+  {
+    "_id": "person_040",
+    "name": "Pelé",
+    "aliases": [
+      "pele",
+      "pelé",
+      "edson arantes do nascimento"
+    ],
+    "clues": [
+      "Three World Cups came home because of me, a record still unmatched.",
+      "My real name is longer and less famous than my nickname.",
+      "A war reportedly paused so people could watch me play.",
+      "I scored roughly a thousand goals, give or take a few debated ones.",
+      "Brazil's greatest export before coffee became cool again."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pele_con_brasil_%28cropped%29.jpg/330px-Pele_con_brasil_%28cropped%29.jpg",
+    "gender": "male",
+    "nationality": ["Brazilian"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Footballer"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "hard",
+      "global": "easy"
+    },
+    "fameScore": 99,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["The King of Football", "O Rei"],
+    "tags": ["football", "brazil", "world cup", "legend"],
+    "relatedPeople": ["person_039", "person_011", "person_012"],
+    "awards": ["FIFA Player of the Century"],
+    "activeYears": [1956, 1977],
+    "searchKeywords": ["o rei", "1000 goals", "brazil", "3 world cups", "pele"]
+  },
+  {
+    "_id": "person_041",
+    "name": "Roger Federer",
+    "aliases": [
+      "roger federer",
+      "federer"
+    ],
+    "clues": [
+      "My backhand looks like poetry to people who hate poetry.",
+      "Twenty Grand Slam titles felt inevitable for over a decade.",
+      "My rivalry with a Spaniard and a Serbian defined a whole era.",
+      "I retired doubles, holding hands with an old rival, both in tears.",
+      "Switzerland's most famous export isn't chocolate when I'm around."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Roger_Federer_2015_%28cropped%29.jpg/330px-Roger_Federer_2015_%28cropped%29.jpg",
+    "gender": "male",
+    "nationality": ["Swiss"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Tennis Player"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "medium",
+      "global": "easy"
+    },
+    "fameScore": 97,
+    "era": ["Contemporary"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["FedEx", "The Swiss Maestro"],
+    "tags": ["tennis", "grand-slam", "wimbledon", "switzerland"],
+    "relatedPeople": ["person_042"],
+    "awards": ["Laureus World Sports Award"],
+    "activeYears": [1998, 2022],
+    "searchKeywords": ["fedex", "swiss maestro", "wimbledon", "grand slam", "tennis"]
+  },
+  {
+    "_id": "person_042",
+    "name": "Rafael Nadal",
+    "aliases": [
+      "rafael nadal",
+      "nadal",
+      "rafa nadal"
+    ],
+    "clues": [
+      "Clay courts might as well be named after me.",
+      "I claimed one tournament in Paris more times than most people visit it.",
+      "My rituals before serving take longer than some matches used to.",
+      "An uncle coached me before the rest of the world caught on.",
+      "My knees have logged more mileage than most retired athletes."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Rafael_Nadal_en_2024_%28cropped%29.jpg/330px-Rafael_Nadal_en_2024_%28cropped%29.jpg",
+    "gender": "male",
+    "nationality": ["Spanish"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Tennis Player"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "medium",
+      "global": "easy"
+    },
+    "fameScore": 97,
+    "era": ["Contemporary"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["King of Clay", "Rafa"],
+    "tags": ["tennis", "french open", "grand-slam", "clay"],
+    "relatedPeople": ["person_041"],
+    "awards": ["Laureus World Sports Award"],
+    "activeYears": [2001, 2024],
+    "searchKeywords": ["rafa", "king of clay", "roland garros", "french open", "tennis"]
+  },
+  {
+    "_id": "person_043",
+    "name": "Michael Phelps",
+    "aliases": [
+      "michael phelps",
+      "phelps"
+    ],
+    "clues": [
+      "Water is basically my second home address.",
+      "Eight golds in one Olympics — nobody's topped that since.",
+      "My wingspan is longer than my height, and it shows in the pool.",
+      "Depression nearly drowned me when the medals stopped mattering.",
+      "Sharks and I once raced, and it wasn't close in my favor."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Michael_Phelps_Rio_Olympics_2016.jpg/330px-Michael_Phelps_Rio_Olympics_2016.jpg",
+    "gender": "male",
+    "nationality": ["American"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Swimmer"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "hard",
+      "global": "easy"
+    },
+    "fameScore": 95,
+    "era": ["Contemporary"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["The Baltimore Bullet"],
+    "tags": ["swimming", "olympics", "gold medals"],
+    "relatedPeople": [],
+    "awards": ["Olympic Gold Medal", "Laureus World Sports Award"],
+    "activeYears": [2000, 2016],
+    "searchKeywords": ["olympics", "23 gold medals", "swimming", "baltimore bullet"]
+  },
+  {
+    "_id": "person_044",
+    "name": "Tiger Woods",
+    "aliases": [
+      "tiger woods"
+    ],
+    "clues": [
+      "My name isn't actually the one on my birth certificate.",
+      "A car crash once threatened to end more than just my golf career.",
+      "Red shirts on Sundays became my unofficial uniform.",
+      "Scandals off the course nearly overshadowed the trophies on it.",
+      "I chased and caught a record most thought untouchable."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/President_Donald_Trump_hosts_a_reception_honoring_Black_History_Month_%2854341713089%29_%28cropped%29.jpg/330px-President_Donald_Trump_hosts_a_reception_honoring_Black_History_Month_%2854341713089%29_%28cropped%29.jpg",
+    "gender": "male",
+    "nationality": ["American"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Golfer"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "hard",
+      "global": "easy"
+    },
+    "fameScore": 96,
+    "era": ["Contemporary"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["Tiger"],
+    "tags": ["golf", "masters", "pga"],
+    "relatedPeople": [],
+    "awards": ["Presidential Medal of Freedom"],
+    "activeYears": [1996, null],
+    "searchKeywords": ["masters", "golf", "red sunday", "tiger", "pga"]
+  },
+  {
+    "_id": "person_045",
+    "name": "Michael Jordan",
+    "aliases": [
+      "michael jordan",
+      "mj"
+    ],
+    "clues": [
+      "My tongue stuck out more than my opponents' defense could handle.",
+      "I got cut from my high school team before becoming basketball's biggest name.",
+      "Six rings, zero Game 7s in the Finals — I never needed one.",
+      "A cartoon movie paired me with rabbits and other animated athletes.",
+      "My shoe brand outsells teams I never even played for."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Michael_Jordan_in_2014.jpg/330px-Michael_Jordan_in_2014.jpg",
+    "gender": "male",
+    "nationality": ["American"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports", "Business"],
+    "occupation": ["Basketball Player", "Businessman"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "hard",
+      "global": "easy"
+    },
+    "fameScore": 99,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["MJ", "His Airness"],
+    "tags": ["basketball", "nba", "bulls", "air jordan"],
+    "relatedPeople": ["person_046"],
+    "awards": ["NBA MVP", "Presidential Medal of Freedom"],
+    "activeYears": [1984, 2003],
+    "searchKeywords": ["air jordan", "bulls", "space jam", "nba", "his airness"]
+  },
+  {
+    "_id": "person_046",
+    "name": "LeBron James",
+    "aliases": [
+      "lebron james",
+      "lebron"
+    ],
+    "clues": [
+      "Sports Illustrated put me on its cover while I was still in high school.",
+      "I took my talents to South Beach, then brought a title back home instead.",
+      "My son plays in the same league now, making history alongside me.",
+      "Ohio built me up, and I've spent my career giving back to it.",
+      "Longevity, not just talent, is my real superpower on the court."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/LeBron_James_%2851959977144%29_%28cropped2%29.jpg/330px-LeBron_James_%2851959977144%29_%28cropped2%29.jpg",
+    "gender": "male",
+    "nationality": ["American"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Basketball Player"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "hard",
+      "global": "easy"
+    },
+    "fameScore": 98,
+    "era": ["Contemporary"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["King James"],
+    "tags": ["basketball", "nba", "lakers", "cavaliers"],
+    "relatedPeople": ["person_045"],
+    "awards": ["NBA MVP", "Olympic Gold Medal"],
+    "activeYears": [2003, null],
+    "searchKeywords": ["king james", "nba", "lakers", "cavaliers", "the decision"]
+  },
+  {
+    "_id": "person_047",
+    "name": "Babe Ruth",
+    "aliases": [
+      "babe ruth"
+    ],
+    "clues": [
+      "I supposedly pointed to the stands before hitting the ball exactly there.",
+      "My waistline was as legendary as my swing.",
+      "A curse was blamed on my old team for nearly a century after I left.",
+      "I started as a pitcher before the world discovered my bat.",
+      "Hot dogs and home runs were both part of my daily routine."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Babe_Ruth2.jpg/330px-Babe_Ruth2.jpg",
+    "gender": "male",
+    "nationality": ["American"],
+    "primaryDomain": "Sports",
+    "industryDomain": ["Sports"],
+    "occupation": ["Baseball Player"],
+    "difficultyLevel": "hard",
+    "difficulty": {
+      "india": "hard",
+      "global": "medium"
+    },
+    "fameScore": 90,
+    "era": ["Historical"],
+    "countryPopularity": ["United States"],
+    "nicknames": ["The Bambino", "The Sultan of Swat"],
+    "tags": ["baseball", "mlb", "yankees"],
+    "relatedPeople": [],
+    "awards": ["MLB All-Century Team"],
+    "activeYears": [1914, 1935],
+    "searchKeywords": ["bambino", "yankees", "home runs", "baseball", "curse of the bambino"]
+  },
+  {
+    "_id": "person_048",
+    "name": "Jawaharlal Nehru",
+    "aliases": [
+      "jawaharlal nehru",
+      "nehru"
+    ],
+    "clues": [
+      "A flower found its way into my jacket every single day.",
+      "Children's Day exists in my country partly because of how much I liked them.",
+      "I delivered a speech about destiny at the stroke of midnight.",
+      "My daughter followed me into the same office I once held.",
+      "I called myself a socialist before it was a debate topic at dinner tables."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Nehru_in_the_Netherlands%2C_1957.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Politics",
+    "industryDomain": ["Politics", "Freedom Movement"],
+    "occupation": ["Politician", "Freedom Fighter"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "medium"
+    },
+    "fameScore": 95,
+    "era": ["Historical"],
+    "countryPopularity": ["India"],
+    "nicknames": ["Chacha Nehru", "Pandit Nehru"],
+    "tags": ["india", "prime minister", "freedom movement"],
+    "relatedPeople": ["person_010", "person_049", "person_050"],
+    "awards": ["Bharat Ratna"],
+    "activeYears": [1912, 1964],
+    "searchKeywords": ["chacha nehru", "first prime minister", "tryst with destiny", "children's day"]
+  },
+  {
+    "_id": "person_049",
+    "name": "Indira Gandhi",
+    "aliases": [
+      "indira gandhi"
+    ],
+    "clues": [
+      "My surname makes people assume a family connection that isn't by blood.",
+      "I declared an emergency that paused democracy for nearly two years.",
+      "My own bodyguards ended my life, the ultimate betrayal.",
+      "I was the only woman to hold my country's top office for over three decades.",
+      "Bangladesh's independence has my fingerprints all over it."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Indira_Gandhi_official_portrait.png/330px-Indira_Gandhi_official_portrait.png",
+    "gender": "female",
+    "nationality": ["Indian"],
+    "primaryDomain": "Politics",
+    "industryDomain": ["Politics"],
+    "occupation": ["Politician"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "medium"
+    },
+    "fameScore": 93,
+    "era": ["Modern"],
+    "countryPopularity": ["India"],
+    "nicknames": ["Iron Lady of India"],
+    "tags": ["prime minister", "emergency", "politics"],
+    "relatedPeople": ["person_048", "person_007"],
+    "awards": ["Bharat Ratna"],
+    "activeYears": [1959, 1984],
+    "searchKeywords": ["emergency", "iron lady", "bangladesh war", "prime minister"]
+  },
+  {
+    "_id": "person_050",
+    "name": "APJ Abdul Kalam",
+    "aliases": [
+      "apj abdul kalam",
+      "a.p.j. abdul kalam",
+      "abdul kalam"
+    ],
+    "clues": [
+      "I designed missiles, then spent my life inspiring anything but war.",
+      "Classrooms were my favorite place to visit, even after I ran a country.",
+      "I died doing what I loved most: giving a lecture.",
+      "My humble roots in a fishing town never left my public image.",
+      "Wings were a recurring theme in the title of my own book."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/A._P._J._Abdul_Kalam.jpg/330px-A._P._J._Abdul_Kalam.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Science",
+    "industryDomain": ["Science", "Politics", "Education"],
+    "occupation": ["Scientist", "President", "Author"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "medium"
+    },
+    "fameScore": 95,
+    "era": ["Modern"],
+    "countryPopularity": ["India"],
+    "nicknames": ["Missile Man of India", "People's President"],
+    "tags": ["scientist", "president", "isro", "drdo", "education"],
+    "relatedPeople": ["person_029", "person_048"],
+    "awards": ["Bharat Ratna", "Padma Vibhushan"],
+    "activeYears": [1960, 2015],
+    "searchKeywords": ["missile man", "wings of fire", "people's president", "drdo", "isro"]
+  },
+  {
+    "_id": "person_051",
+    "name": "B.R. Ambedkar",
+    "aliases": [
+      "b.r. ambedkar",
+      "br ambedkar",
+      "bhimrao ambedkar"
+    ],
+    "clues": [
+      "I wrote the rulebook my entire country still plays by.",
+      "Discrimination pushed me to convert religions, along with millions who followed.",
+      "Economics and law were both fields I mastered before most people picked one.",
+      "My birthday is now a national holiday, more than just a footnote.",
+      "Statues of me now outnumber return visits to my actual writings."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Dr._Bhimrao_Ambedkar.jpg/330px-Dr._Bhimrao_Ambedkar.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Politics",
+    "industryDomain": ["Politics", "Law", "Social Reform"],
+    "occupation": ["Jurist", "Economist", "Politician", "Social Reformer"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "hard"
+    },
+    "fameScore": 94,
+    "era": ["Historical"],
+    "countryPopularity": ["India"],
+    "nicknames": ["Babasaheb"],
+    "tags": ["constitution", "social reform", "law", "bharat ratna"],
+    "relatedPeople": ["person_010", "person_048", "person_050"],
+    "awards": ["Bharat Ratna"],
+    "activeYears": [1920, 1956],
+    "searchKeywords": ["babasaheb", "constitution", "dalit leader", "bharat ratna", "ambedkar"]
+  },
+  {
+    "_id": "person_052",
+    "name": "Subhas Chandra Bose",
+    "aliases": [
+      "subhas chandra bose",
+      "netaji",
+      "subhash chandra bose"
+    ],
+    "clues": [
+      "My disappearance is still debated more than most people's actual deaths.",
+      "I formed an army abroad while my country waited for freedom at home.",
+      "A famous slogan about blood and freedom is credited to me.",
+      "I escaped house arrest disguised well enough to fool the British.",
+      "Airports and streets are named after a title, not my birth name, that I still carry."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Subhas_Chandra_Bose_NRB.jpg/330px-Subhas_Chandra_Bose_NRB.jpg",
+    "gender": "male",
+    "nationality": ["Indian"],
+    "primaryDomain": "Politics",
+    "industryDomain": ["Politics", "Military", "Freedom Movement"],
+    "occupation": ["Freedom Fighter", "Political Leader"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "hard"
+    },
+    "fameScore": 93,
+    "era": ["Historical"],
+    "countryPopularity": ["India"],
+    "nicknames": ["Netaji"],
+    "tags": ["ina", "freedom movement", "azad hind", "independence"],
+    "relatedPeople": ["person_010", "person_048", "person_051"],
+    "awards": [],
+    "activeYears": [1921, 1945],
+    "searchKeywords": ["netaji", "azad hind fauj", "give me blood", "ina", "subhash bose"]
+  },
+  {
+    "_id": "person_053",
+    "name": "Winston Churchill",
+    "aliases": [
+      "winston churchill",
+      "churchill"
+    ],
+    "clues": [
+      "I painted in my free time, and it wasn't half bad.",
+      "Cigars and I were rarely seen apart in photographs.",
+      "I lost an election right after winning the biggest war of the century.",
+      "My speeches promised blood, sweat, and not much else pleasant.",
+      "Depression followed me quietly, and I gave it an animal's name."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg/330px-Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg",
+    "gender": "male",
+    "nationality": ["British"],
+    "primaryDomain": "Politics",
+    "industryDomain": ["Politics", "Military", "Literature"],
+    "occupation": ["Prime Minister", "Author", "Military Officer"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "medium",
+      "global": "easy"
+    },
+    "fameScore": 95,
+    "era": ["Historical"],
+    "countryPopularity": ["Global"],
+    "nicknames": [],
+    "tags": ["world war ii", "britain", "prime minister", "nobel"],
+    "relatedPeople": ["person_054"],
+    "awards": ["Nobel Prize in Literature"],
+    "activeYears": [1900, 1965],
+    "searchKeywords": ["ww2", "blood sweat and tears", "british prime minister", "churchill", "nobel literature"]
+  },
+  {
+    "_id": "person_054",
+    "name": "Abraham Lincoln",
+    "aliases": [
+      "abraham lincoln",
+      "lincoln"
+    ],
+    "clues": [
+      "A theater visit turned into the last night of my life.",
+      "My height made me stand out even before my politics did.",
+      "I grew a beard because a young girl wrote and suggested it.",
+      "A war over unity cost the nation more lives than any other in its history, under my watch.",
+      "My face is carved into a mountain I never got to see."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Abraham_Lincoln_1863_Portrait_%283x4_cropped%29.jpg/330px-Abraham_Lincoln_1863_Portrait_%283x4_cropped%29.jpg",
+    "gender": "male",
+    "nationality": ["American"],
+    "primaryDomain": "Politics",
+    "industryDomain": ["Politics", "Law"],
+    "occupation": ["President", "Lawyer"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "medium",
+      "global": "easy"
+    },
+    "fameScore": 97,
+    "era": ["Historical"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["Honest Abe"],
+    "tags": ["president", "civil war", "slavery", "usa"],
+    "relatedPeople": ["person_055", "person_056"],
+    "awards": [],
+    "activeYears": [1834, 1865],
+    "searchKeywords": ["honest abe", "civil war", "mount rushmore", "emancipation", "lincoln"]
+  },
+  {
+    "_id": "person_055",
+    "name": "George Washington",
+    "aliases": [
+      "george washington",
+      "washington"
+    ],
+    "clues": [
+      "I could have been crowned king, and chose not to be.",
+      "My teeth were famously not made of wood, despite the rumors.",
+      "I set a two-term precedent nobody broke for over a century.",
+      "My face is the one everyone hands over without a second thought.",
+      "A cherry tree story about my honesty was probably never true."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/330px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+    "gender": "male",
+    "nationality": ["American"],
+    "primaryDomain": "Politics",
+    "industryDomain": ["Politics", "Military"],
+    "occupation": ["President", "Military Commander"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "hard",
+      "global": "easy"
+    },
+    "fameScore": 95,
+    "era": ["Historical"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["Father of His Country"],
+    "tags": ["first president", "american revolution", "usa"],
+    "relatedPeople": ["person_054"],
+    "awards": [],
+    "activeYears": [1752, 1799],
+    "searchKeywords": ["first president", "mount vernon", "founding father", "dollar bill", "washington"]
+  },
+  {
+    "_id": "person_056",
+    "name": "Martin Luther King Jr.",
+    "aliases": [
+      "martin luther king jr",
+      "martin luther king",
+      "mlk"
+    ],
+    "clues": [
+      "I had a dream, and I made sure everyone heard about it.",
+      "A motel balcony became the site of my final moment.",
+      "My birthday became a national holiday after years of resistance to the idea.",
+      "Nonviolence was my weapon of choice against injustice.",
+      "A mountaintop was the last thing I spoke about, the night before I died."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Martin_Luther_King%2C_Jr..jpg/330px-Martin_Luther_King%2C_Jr..jpg",
+    "gender": "male",
+    "nationality": ["American"],
+    "primaryDomain": "Social Reform",
+    "industryDomain": ["Social Reform", "Politics", "Religion"],
+    "occupation": ["Civil Rights Leader", "Minister"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "medium",
+      "global": "easy"
+    },
+    "fameScore": 96,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["MLK"],
+    "tags": ["civil rights", "non violence", "dream speech"],
+    "relatedPeople": ["person_010", "person_057"],
+    "awards": ["Nobel Peace Prize"],
+    "activeYears": [1955, 1968],
+    "searchKeywords": ["i have a dream", "civil rights", "mlk", "nobel peace prize"]
+  },
+  {
+    "_id": "person_057",
+    "name": "Mother Teresa",
+    "aliases": [
+      "mother teresa",
+      "teresa"
+    ],
+    "clues": [
+      "I traded a comfortable life for the poorest streets of Kolkata.",
+      "A Nobel Prize came with money I gave straight back to charity.",
+      "My habit had blue stripes and became instantly recognizable worldwide.",
+      "Sainthood came for me years after I'd already passed.",
+      "Albania knew me by a different name before the world called me 'Mother'."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Mother_Teresa_1.jpg/330px-Mother_Teresa_1.jpg",
+    "gender": "female",
+    "nationality": ["Albanian", "Indian"],
+    "primaryDomain": "Religion",
+    "industryDomain": ["Religion", "Humanitarian"],
+    "occupation": ["Catholic Nun", "Missionary"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "easy"
+    },
+    "fameScore": 95,
+    "era": ["Modern"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["Saint Teresa of Calcutta"],
+    "tags": ["charity", "kolkata", "missionaries of charity"],
+    "relatedPeople": ["person_058"],
+    "awards": ["Nobel Peace Prize", "Bharat Ratna"],
+    "activeYears": [1929, 1997],
+    "searchKeywords": ["kolkata", "missionaries of charity", "saint", "nobel peace prize"]
+  },
+  {
+    "_id": "person_058",
+    "name": "Dalai Lama",
+    "aliases": [
+      "dalai lama",
+      "the dalai lama"
+    ],
+    "clues": [
+      "I was identified as myself while still a toddler, through a series of tests.",
+      "Exile has been my address for longer than most people's entire lives.",
+      "My laughter is as famous as my teachings.",
+      "I'm searched for anew, reincarnated, every time I 'leave'.",
+      "A red robe and a bald head are basically my entire wardrobe description."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/The_Dalai_Lama_in_2012.jpg/500px-The_Dalai_Lama_in_2012.jpg",
+    "gender": "male",
+    "nationality": ["Tibetan"],
+    "primaryDomain": "Religion",
+    "industryDomain": ["Religion", "Philosophy", "Humanitarian"],
+    "occupation": ["Spiritual Leader"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "medium",
+      "global": "medium"
+    },
+    "fameScore": 93,
+    "era": ["Contemporary"],
+    "countryPopularity": ["Global"],
+    "nicknames": ["His Holiness"],
+    "tags": ["buddhism", "tibet", "peace"],
+    "relatedPeople": ["person_057"],
+    "awards": ["Nobel Peace Prize"],
+    "activeYears": [1950, null],
+    "searchKeywords": ["tibet", "buddhism", "dharamshala", "nobel peace prize", "dalai lama"]
+  },
+  {
+    "_id": "person_059",
+    "name": "Nikola Tesla",
+    "aliases": [
+      "nikola tesla",
+      "tesla"
+    ],
+    "clues": [
+      "Alternating current owes its popularity to my stubbornness.",
+      "A unit of magnetic strength borrows my name.",
+      "I died broke, despite powers greater than my rival's fortune.",
+      "Pigeons, oddly, were some of my closest companions.",
+      "My rivalry with a lightbulb-loving inventor is still debated online."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tesla_circa_1890.jpeg/500px-Tesla_circa_1890.jpeg",
+    "gender": "male",
+    "nationality": ["Serbian", "American"],
+    "primaryDomain": "Science",
+    "industryDomain": ["Science", "Engineering", "Inventor"],
+    "occupation": ["Inventor", "Electrical Engineer"],
+    "difficultyLevel": "medium",
+    "difficulty": {
+      "india": "medium",
+      "global": "medium"
+    },
+    "fameScore": 95,
+    "era": ["Historical"],
+    "countryPopularity": ["Global"],
+    "nicknames": [],
+    "tags": ["electricity", "ac current", "inventor"],
+    "relatedPeople": ["person_060", "person_015"],
+    "awards": [],
+    "activeYears": [1882, 1943],
+    "searchKeywords": ["ac current", "tesla coil", "inventor", "edison rivalry", "electricity"]
+  },
+  {
+    "_id": "person_060",
+    "name": "Isaac Newton",
+    "aliases": [
+      "isaac newton",
+      "newton"
+    ],
+    "clues": [
+      "An apple allegedly gave me more than just a snack idea.",
+      "I invented calculus, then argued for years about who did it first.",
+      "Gravity owes its explanation to me, whether or not the apple story is true.",
+      "I served as a warden chasing counterfeiters in my later years.",
+      "My laws still govern how things fall, whether or not you've read them."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg/330px-Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg",
+    "gender": "male",
+    "nationality": ["British"],
+    "primaryDomain": "Science",
+    "industryDomain": ["Science", "Mathematics", "Physics"],
+    "occupation": ["Physicist", "Mathematician", "Astronomer"],
+    "difficultyLevel": "easy",
+    "difficulty": {
+      "india": "easy",
+      "global": "easy"
+    },
+    "fameScore": 99,
+    "era": ["Historical"],
+    "countryPopularity": ["Global"],
+    "nicknames": [],
+    "tags": ["gravity", "physics", "calculus", "scientist"],
+    "relatedPeople": ["person_029", "person_059"],
+    "awards": ["Knight Bachelor"],
+    "activeYears": [1665, 1727],
+    "searchKeywords": ["gravity", "apple", "calculus", "laws of motion", "scientist"]
+  },
+  {
+    "_id": "person_061",
+    "name": "Charles Darwin",
+    "aliases": [
+      "charles darwin",
+      "darwin"
+    ],
+    "clues": [
+      "A five-year boat trip changed how humanity sees itself.",
+      "Finches and their beaks quietly wrecked entire belief systems.",
+      "My book's title is longer than most people's attention span for reading it.",
+      "I delayed publishing my biggest idea for over a decade out of fear.",
+      "Family trees, in my telling, stretch back to something far less flattering than royalty."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Charles_Darwin_seated_crop.jpg/330px-Charles_Darwin_seated_crop.jpg",
+    "industry": ["Science", "Biology", "Natural History"],
+    "gender": "Male",
+    "difficulty": "Medium",
+    "nationality": "British",
+    "country": "United Kingdom",
+    "era": "Historical",
+    "tags": ["scientist", "evolution", "naturalist", "biology"],
+    "answerVariants": ["charles darwin", "darwin"],
+    "hintOrder": [5, 2, 4, 1, 3]
+  },
+  {
+    "_id": "person_062",
+    "name": "Marie Curie",
+    "aliases": [
+      "marie curie",
+      "curie"
+    ],
+    "clues": [
+      "I won prizes in two different sciences, a feat still rare today.",
+      "My notebooks are still too radioactive to handle safely.",
+      "My daughter followed my footsteps and won the same prize I did.",
+      "I discovered elements and named one after my own homeland.",
+      "The very thing I studied likely caused the illness that killed me."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Marie_Curie_c._1920s.jpg/330px-Marie_Curie_c._1920s.jpg",
+    "industry": ["Science", "Physics", "Chemistry"],
+    "gender": "Female",
+    "difficulty": "Medium",
+    "nationality": "Polish-French",
+    "country": "Poland",
+    "era": "Historical",
+    "tags": ["scientist", "physics", "chemistry", "nobel prize"],
+    "answerVariants": ["marie curie", "curie"],
+    "hintOrder": [4, 2, 5, 1, 3]
+  },
+  {
+    "_id": "person_063",
+    "name": "Leonardo da Vinci",
+    "aliases": [
+      "leonardo da vinci",
+      "da vinci"
+    ],
+    "clues": [
+      "My most famous smile has no confirmed identity behind it.",
+      "I wrote notes backward, in mirror image, for reasons still debated.",
+      "I designed flying machines centuries before anyone could build one.",
+      "My anatomy sketches came from dissections most artists never dared attempt.",
+      "I left more ideas unfinished than most people ever start."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Francesco_Melzi_-_Portrait_of_Leonardo.png/330px-Francesco_Melzi_-_Portrait_of_Leonardo.png",
+    "industry": ["Art", "Science", "Engineering", "Invention"],
+    "gender": "Male",
+    "difficulty": "Medium",
+    "nationality": "Italian",
+    "country": "Italy",
+    "era": "Historical",
+    "tags": ["artist", "inventor", "renaissance", "painter"],
+    "answerVariants": ["leonardo da vinci", "da vinci", "leonardo"],
+    "hintOrder": [3, 4, 2, 1, 5]
+  },
+  {
+    "_id": "person_064",
+    "name": "Pablo Picasso",
+    "aliases": [
+      "pablo picasso",
+      "picasso"
+    ],
+    "clues": [
+      "I could draw like a master as a child, then spent my life unlearning it.",
+      "My art broke faces into shapes before anyone called it a movement.",
+      "Thousands of works exist under my name; nobody's counted them all for certain.",
+      "I painted a mural in protest of a bombing, in black, white, and grey only.",
+      "My name alone is now shorthand for an entire art style."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Pablo_picasso_1.jpg/330px-Pablo_picasso_1.jpg",
+    "industry": ["Art", "Painting"],
+    "gender": "Male",
+    "difficulty": "Medium",
+    "nationality": "Spanish",
+    "country": "Spain",
+    "era": "Historical",
+    "tags": ["artist", "cubism", "painter"],
+    "answerVariants": ["pablo picasso", "picasso"],
+    "hintOrder": [2, 4, 5, 1, 3]
+  },
+  {
+    "_id": "person_065",
+    "name": "Vincent van Gogh",
+    "aliases": [
+      "vincent van gogh",
+      "van gogh"
+    ],
+    "clues": [
+      "I sold barely any paintings while alive, and now can't be bought cheaply.",
+      "My ear has a story darker than most museum placards mention.",
+      "Stars over a quiet town became one of history's most reproduced images.",
+      "My brother funded my entire career, believing in me when no one else did.",
+      "Sunflowers, more than anything, became my unofficial signature."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/330px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+    "industry": ["Art", "Painting"],
+    "gender": "Male",
+    "difficulty": "Easy",
+    "nationality": "Dutch",
+    "country": "Netherlands",
+    "era": "Historical",
+    "tags": ["artist", "painter", "post-impressionism"],
+    "answerVariants": ["vincent van gogh", "van gogh"],
+    "hintOrder": [5, 2, 3, 1, 4]
+  },
+  {
+    "_id": "person_066",
+    "name": "William Shakespeare",
+    "aliases": [
+      "william shakespeare",
+      "shakespeare"
+    ],
+    "clues": [
+      "I invented words people still use without knowing I made them up.",
+      "My death anniversary and birthday supposedly land on the same date.",
+      "Some scholars still doubt I wrote everything credited to my name.",
+      "Star-crossed lovers and a Danish prince both owe their fame to my pen.",
+      "A globe-shaped theater bears witness to my career, rebuilt after burning down."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/William_Shakespeare_by_John_Taylor%2C_edited.jpg/330px-William_Shakespeare_by_John_Taylor%2C_edited.jpg",
+    "industry": ["Literature", "Theatre", "Poetry"],
+    "gender": "Male",
+    "difficulty": "Easy",
+    "nationality": "English",
+    "country": "United Kingdom",
+    "era": "Historical",
+    "tags": ["writer", "playwright", "poet"],
+    "answerVariants": ["william shakespeare", "shakespeare"],
+    "hintOrder": [4, 5, 1, 3, 2]
+  },
+  {
+    "_id": "person_067",
+    "name": "J.K. Rowling",
+    "aliases": [
+      "j.k. rowling",
+      "jk rowling",
+      "rowling"
+    ],
+    "clues": [
+      "I wrote my first bestseller as a broke single mother in cafés.",
+      "My initials hide a middle name I don't actually have.",
+      "A boy wizard made me one of the richest authors alive, then I gave much of it away.",
+      "Rejections piled up before any publisher took a chance on my story.",
+      "My pen name later hid an entirely different genre I wrote in secret."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J._K._Rowling_2010.jpg/500px-J._K._Rowling_2010.jpg",
+    "industry": ["Literature", "Writing"],
+    "gender": "Female",
+    "difficulty": "Easy",
+    "nationality": "British",
+    "country": "United Kingdom",
+    "era": "Contemporary",
+    "tags": ["author", "harry potter", "novelist"],
+    "answerVariants": ["jk rowling", "j.k. rowling", "rowling"],
+    "hintOrder": [3, 5, 1, 4, 2]
+  },
+  {
+    "_id": "person_068",
+    "name": "Walt Disney",
+    "aliases": [
+      "walt disney",
+      "disney"
+    ],
+    "clues": [
+      "A mouse made me a household name before theme parks ever existed.",
+      "Rumors claim I'm frozen somewhere, though that's just an urban legend.",
+      "I was fired once for supposedly lacking imagination.",
+      "My empire started with cartoons and ended up building entire cities.",
+      "My own signature became one of the most recognized logos in the world."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Walt_Disney_1946_%28cropped2%29.JPG/330px-Walt_Disney_1946_%28cropped2%29.JPG",
+    "industry": ["Entertainment", "Animation", "Business"],
+    "gender": "Male",
+    "difficulty": "Easy",
+    "nationality": "American",
+    "country": "United States",
+    "era": "Historical",
+    "tags": ["animation", "entrepreneur", "disney"],
+    "answerVariants": ["walt disney", "disney"],
+    "hintOrder": [1, 4, 5, 3, 2]
+  },
+  {
+    "_id": "person_069",
+    "name": "Charlie Chaplin",
+    "aliases": [
+      "charlie chaplin",
+      "chaplin"
+    ],
+    "clues": [
+      "I never said a word in most of my most famous films.",
+      "A mustache and a cane became my whole personality on screen.",
+      "I was investigated for political leanings and eventually exiled from Hollywood.",
+      "My tramp character made poverty look strangely graceful.",
+      "I composed music for my own films, on top of everything else."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Charlie_Chaplin_portrait_Getty_1739411952.jpg/330px-Charlie_Chaplin_portrait_Getty_1739411952.jpg",
+    "industry": ["Film", "Comedy", "Entertainment"],
+    "gender": "Male",
+    "difficulty": "Easy",
+    "nationality": "British",
+    "country": "United Kingdom",
+    "era": "Historical",
+    "tags": ["actor", "comedian", "silent films"],
+    "answerVariants": ["charlie chaplin", "chaplin"],
+    "hintOrder": [2, 1, 4, 5, 3]
+  },
+  {
+    "_id": "person_070",
+    "name": "Steven Spielberg",
+    "aliases": [
+      "steven spielberg",
+      "spielberg"
+    ],
+    "clues": [
+      "Sharks and dinosaurs both owe their pop-culture fame to me.",
+      "I was rejected from film school, twice, before becoming Hollywood's biggest name.",
+      "Aliens phoned home in one of my most beloved stories.",
+      "A concentration camp survivor's list became one of my most serious films.",
+      "My name alone can greenlight a blockbuster before a script's even finished."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/MKr25402_Steven_Spielberg_%28Berlinale_2023%29_%283x4_cropped%29.jpg/330px-MKr25402_Steven_Spielberg_%28Berlinale_2023%29_%283x4_cropped%29.jpg",
+    "industry": ["Film", "Direction", "Entertainment"],
+    "gender": "Male",
+    "difficulty": "Easy",
+    "nationality": "American",
+    "country": "United States",
+    "era": "Contemporary",
+    "tags": ["director", "producer", "hollywood"],
+    "answerVariants": ["steven spielberg", "spielberg"],
+    "hintOrder": [1, 3, 4, 2, 5]
+  },
+  {
+    "_id": "person_071",
+    "name": "Alfred Hitchcock",
+    "aliases": [
+      "alfred hitchcock",
+      "hitchcock"
+    ],
+    "clues": [
+      "I appeared in cameo in almost every one of my own films, blink and you'd miss me.",
+      "A shower scene I directed still makes people nervous decades later.",
+      "Birds, in my hands, became something to fear instead of feed.",
+      "Suspense was my entire brand before the word became a genre label.",
+      "I never won the top directing award, despite defining the genre."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Hitchcock%2C_Alfred_02.jpg/330px-Hitchcock%2C_Alfred_02.jpg",
+    "industry": ["Film", "Direction", "Entertainment"],
+    "gender": "Male",
+    "difficulty": "Medium",
+    "nationality": "British",
+    "country": "United Kingdom",
+    "era": "Historical",
+    "tags": ["director", "thriller", "suspense", "hollywood"],
+    "answerVariants": ["alfred hitchcock", "hitchcock"],
+    "hintOrder": [4, 2, 3, 1, 5]
+  },
+  {
+    "_id": "person_072",
+    "name": "Christopher Nolan",
+    "aliases": [
+      "christopher nolan",
+      "nolan"
+    ],
+    "clues": [
+      "I bend time in almost every movie I make, sometimes literally.",
+      "My films rarely use green screens, preferring things blown up for real.",
+      "A dream within a dream within a dream is basically my calling card.",
+      "I finally won the industry's top award, for a film about a bomb, not a superhero.",
+      "My brother often writes alongside me, though he stays out of the spotlight."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/ChristopherNolan-byPhilipRomano_%28cropped%29.jpg/330px-ChristopherNolan-byPhilipRomano_%28cropped%29.jpg",
+    "industry": ["Film", "Direction", "Screenwriting"],
+    "gender": "Male",
+    "difficulty": "Easy",
+    "nationality": "British-American",
+    "country": "United Kingdom",
+    "era": "Contemporary",
+    "tags": ["director", "filmmaker", "hollywood", "screenwriter"],
+    "answerVariants": ["christopher nolan", "nolan"],
+    "hintOrder": [3, 1, 2, 5, 4]
+  },
+  {
+    "_id": "person_073",
+    "name": "Raj Kapoor",
+    "aliases": [
+      "raj kapoor"
+    ],
+    "clues": [
+      "My tramp-like screen persona borrowed heavily from a silent-era legend abroad.",
+      "My banner's logo shows me carrying a woman, still used by my family's studio today.",
+      "Soviet audiences adored my films more than some of my own countrymen did.",
+      "My last name now belongs to an entire acting dynasty spanning generations.",
+      "A folk song about wandering became almost a personal anthem for my screen image."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Raj_Kapoor_2001_stamp_of_India_%28cropped%29.jpg/330px-Raj_Kapoor_2001_stamp_of_India_%28cropped%29.jpg",
+    "industry": ["Film", "Acting", "Direction", "Production"],
+    "gender": "Male",
+    "difficulty": "Hard",
+    "nationality": "Indian",
+    "country": "India",
+    "era": "Historical",
+    "tags": ["actor", "director", "bollywood", "producer"],
+    "answerVariants": ["raj kapoor"],
+    "hintOrder": [5, 4, 2, 1, 3]
+  },
+  {
+    "_id": "person_074",
+    "name": "Aamir Khan",
+    "aliases": [
+      "aamir khan"
+    ],
+    "clues": [
+      "I've quit an entire film industry's awards ceremony, more than once, as a form of protest.",
+      "My films average out to roughly one per year, but they seem to make up for it.",
+      "Perfectionism is basically my entire brand as a filmmaker.",
+      "I aged forty years for one role, prosthetics and all.",
+      "A wrestling story I acted in became one of my country's biggest exports abroad."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Aamir_Khan_at_the_success_bash_of_Secret_Superstar.jpg/330px-Aamir_Khan_at_the_success_bash_of_Secret_Superstar.jpg",
+    "industry": ["Film", "Acting", "Production"],
+    "gender": "Male",
+    "difficulty": "Easy",
+    "nationality": "Indian",
+    "country": "India",
+    "era": "Contemporary",
+    "tags": ["actor", "bollywood", "producer"],
+    "answerVariants": ["aamir khan"],
+    "hintOrder": [3, 5, 2, 1, 4]
+  },
+  {
+    "_id": "person_075",
+    "name": "Salman Khan",
+    "aliases": [
+      "salman khan"
+    ],
+    "clues": [
+      "My shirt comes off more often in my films than most actors' entire filmography.",
+      "A hit-and-run case has followed my career for over a decade.",
+      "My charity runs on the same first name as my public persona.",
+      "Bachelorhood is basically part of my brand at this point.",
+      "Eid releases are basically guaranteed to have my face on the poster."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Salman_Khan_snapped_at_the_Angry_Young_Men_trailer_launch.jpg/330px-Salman_Khan_snapped_at_the_Angry_Young_Men_trailer_launch.jpg",
+    "industry": ["Film", "Acting", "Production"],
+    "gender": "Male",
+    "difficulty": "Easy",
+    "nationality": "Indian",
+    "country": "India",
+    "era": "Contemporary",
+    "tags": ["actor", "bollywood", "television"],
+    "answerVariants": ["salman khan"],
+    "hintOrder": [5, 1, 4, 3, 2]
+  },
+  {
+    "_id": "person_076",
+    "name": "Hrithik Roshan",
+    "aliases": [
+      "hrithik roshan"
+    ],
+    "clues": [
+      "I was born with an extra thumb, later corrected with surgery.",
+      "My father directed the film that made me a star.",
+      "Dance moves earned me comparisons to a machine long before robots became my actual role.",
+      "A brain surgery once threatened to end my career before it truly began.",
+      "My chiseled jaw gets its own fan pages, separate from my acting."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hrithik_at_Rado_launch.jpg/330px-Hrithik_at_Rado_launch.jpg",
+    "industry": ["Film", "Acting", "Dance"],
+    "gender": "Male",
+    "difficulty": "Medium",
+    "nationality": "Indian",
+    "country": "India",
+    "era": "Contemporary",
+    "tags": ["actor", "dancer", "bollywood"],
+    "answerVariants": ["hrithik roshan"],
+    "hintOrder": [3, 2, 1, 4, 5]
+  },
+  {
+    "_id": "person_077",
+    "name": "Deepika Padukone",
+    "aliases": [
+      "deepika padukone"
+    ],
+    "clues": [
+      "Badminton ran in my family before Bollywood ever did.",
+      "I've openly discussed my battle with depression, breaking a long industry silence.",
+      "My debut film also introduced my future real-life partner, on screen first.",
+      "My height alone set me apart on a set full of shorter leading men.",
+      "A single scarf tied a certain way became a viral fashion topic because of me."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Deepika_Padukone_2025_%281%29.png/330px-Deepika_Padukone_2025_%281%29.png",
+    "industry": ["Film", "Acting", "Modeling"],
+    "gender": "Female",
+    "difficulty": "Medium",
+    "nationality": "Indian",
+    "country": "India",
+    "era": "Contemporary",
+    "tags": ["actress", "bollywood", "model"],
+    "answerVariants": ["deepika padukone"],
+    "hintOrder": [1, 2, 3, 5, 4]
+  },
+  {
+    "_id": "person_078",
+    "name": "Alia Bhatt",
+    "aliases": [
+      "alia bhatt"
+    ],
+    "clues": [
+      "My father directs, my mother acts, and I somehow do both better on some days.",
+      "I was mocked online for a quiz answer, then turned the joke into a punchline of my own.",
+      "Producing films became my side project before I turned thirty.",
+      "A viral video roast became my origin story more than any single film did.",
+      "My husband and I met on set before we ever got married."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Alia_Bhatt_attends_at_the_2026_Cannes_Film_Festival_%28cropped%29_%28cropped%29.jpg/330px-Alia_Bhatt_attends_at_the_2026_Cannes_Film_Festival_%28cropped%29_%28cropped%29.jpg",
+    "industry": ["Film", "Acting", "Production"],
+    "gender": "Female",
+    "difficulty": "Medium",
+    "nationality": "Indian",
+    "country": "India",
+    "era": "Contemporary",
+    "tags": ["actress", "bollywood", "producer"],
+    "answerVariants": ["alia bhatt"],
+    "hintOrder": [5, 3, 1, 2, 4]
+  },
+  {
+    "_id": "person_079",
+    "name": "Rajinikanth",
+    "aliases": [
+      "rajinikanth",
+      "rajni"
+    ],
+    "clues": [
+      "Bus conductor was my job before the whole country started worshipping me.",
+      "My style of lighting and flipping a cigarette became more famous than most actors' entire careers.",
+      "Punchlines from my films get chanted in theaters like scripture.",
+      "I turned down politics more times than most politicians turn down bribes.",
+      "My sunglasses trick has its own dedicated compilation videos online."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Rajinikanth_in_2019.jpg/330px-Rajinikanth_in_2019.jpg",
+    "industry": ["Film", "Acting"],
+    "gender": "Male",
+    "difficulty": "Easy",
+    "nationality": "Indian",
+    "country": "India",
+    "era": "Contemporary",
+    "tags": ["actor", "kollywood", "superstar"],
+    "answerVariants": ["rajinikanth", "rajni"],
+    "hintOrder": [1, 2, 5, 3, 4]
+  },
+  {
+    "_id": "person_080",
+    "name": "Madhuri Dixit",
+    "aliases": [
+      "madhuri dixit"
+    ],
+    "clues": [
+      "A single dance number about rain made me a household name for a generation.",
+      "I left the industry at my peak to move abroad, then came right back.",
+      "My dimples have their own fan following, separate from my dancing.",
+      "I trained as a dancer long before the cameras ever found me.",
+      "Choreographers still study my moves decades after they were first filmed."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Madhuri_Dixit_in_November_2022.jpg/330px-Madhuri_Dixit_in_November_2022.jpg",
+    "industry": ["Film", "Acting", "Dance"],
+    "gender": "Female",
+    "difficulty": "Medium",
+    "nationality": "Indian",
+    "country": "India",
+    "era": "Contemporary",
+    "tags": ["actress", "dancer", "bollywood"],
+    "answerVariants": ["madhuri dixit"],
+    "hintOrder": [1, 4, 3, 5, 2]
+  },
+  {
+    "_id": "person_081",
+    "name": "Sridevi",
+    "aliases": ["sridevi"],
+    "clues": [
+      "I dubbed my own dialogue in multiple languages before dubbing artists existed for me.",
+      "I died in a bathtub, in a city known more for its skyline than for tragedy.",
+      "My child stardom transitioned into adult superstardom without missing a beat.",
+      "A mythical snake role made me one of the era's biggest icons.",
+      "My daughters carried my legacy into an industry that once adored me."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Sridevi.jpg/330px-Sridevi.jpg",
+    "industry": ["film"],
+    "gender": "female",
+    "difficulty": "medium",
+    "country": "India",
+    "nationality": "Indian",
+    "era": "Modern",
+    "primaryProfession": "Actor",
+    "tags": ["bollywood", "south-indian-cinema", "actor", "legend"],
+    "region": "Asia"
+  },
+  {
+    "_id": "person_082",
+    "name": "Irrfan Khan",
+    "aliases": ["irrfan khan", "irfan khan"],
+    "clues": [
+      "Hollywood came calling for me without me ever chasing it.",
+      "My eyes did more acting than most people's entire monologues.",
+      "A rare cancer took me at the height of my most acclaimed work.",
+      "I played a scientist's role that took me from earth to actual planetary science stories.",
+      "My accent-free English made me a rare crossover star from my industry."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Irrfan_Khan_still2.jpg/500px-Irrfan_Khan_still2.jpg",
+    "industry": ["film"],
+    "gender": "male",
+    "difficulty": "medium",
+    "country": "India",
+    "nationality": "Indian",
+    "era": "Modern",
+    "primaryProfession": "Actor",
+    "tags": ["bollywood", "hollywood", "actor", "drama"],
+    "region": "Asia"
+  },
+  {
+    "_id": "person_083",
+    "name": "Kishore Kumar",
+    "aliases": ["kishore kumar"],
+    "clues": [
+      "Yodeling became part of my signature sound, long before it was cool.",
+      "I sang, acted, directed, and composed, often for the same film.",
+      "My voice became the default sound of Bollywood's biggest heroes, though I wasn't always the one on screen.",
+      "Comedy roles let me be as eccentric off-screen as I was in real life.",
+      "My marriages became almost as famous as my melodies."
+    ],
+    "imageUrl": "https://translate.google.com/website?sl=en&tl=hi&hl=hi&client=srp&u=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Kishore_Kumar_2016_postcard_of_India_%2528cropped%2529.jpg/500px-Kishore_Kumar_2016_postcard_of_India_%2528cropped%2529.jpg",
+    "industry": ["music", "film"],
+    "gender": "male",
+    "difficulty": "medium",
+    "country": "India",
+    "nationality": "Indian",
+    "era": "Modern",
+    "primaryProfession": "Singer",
+    "tags": ["playback-singer", "composer", "actor", "bollywood"],
+    "region": "Asia"
+  },
+  {
+    "_id": "person_084",
+    "name": "Mohammed Rafi",
+    "aliases": ["mohammed rafi", "mohd rafi"],
+    "clues": [
+      "My voice crossed religions and decades without ever losing its devotion.",
+      "I never learned to read music formally, yet became one of the most recorded voices ever.",
+      "Prayers and love songs both sounded equally sincere coming from me.",
+      "I sang in a dozen-plus languages despite being fluent in only a couple.",
+      "My playback voice outlived the actors whose lips it was matched to."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mohammed_Rafi_2016_postcard_of_India_crop-flip.jpg/330px-Mohammed_Rafi_2016_postcard_of_India_crop-flip.jpg",
+    "industry": ["music"],
+    "gender": "male",
+    "difficulty": "medium",
+    "country": "India",
+    "nationality": "Indian",
+    "era": "Modern",
+    "primaryProfession": "Singer",
+    "tags": ["playback-singer", "bollywood", "legend"],
+    "region": "Asia"
+  },
+  {
+    "_id": "person_085",
+    "name": "Asha Bhosle",
+    "aliases": ["asha bhosle"],
+    "clues": [
+      "My sister and I shared an industry but rarely shared a microphone.",
+      "Cabaret numbers became my specialty when others avoided them.",
+      "I hold a record for the sheer number of songs recorded, still debated as the most ever.",
+      "A restaurant chain overseas carries my name, away from the recording booth entirely.",
+      "My voice stayed relevant across genres that came decades after my debut."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Ashaji.jpg/330px-Ashaji.jpg",
+    "industry": ["music"],
+    "gender": "female",
+    "difficulty": "medium",
+    "country": "India",
+    "nationality": "Indian",
+    "era": "Modern",
+    "primaryProfession": "Singer",
+    "tags": ["playback-singer", "bollywood", "legend"],
+    "region": "Asia"
+  },
+  {
+    "_id": "person_086",
+    "name": "Beyoncé",
+    "aliases": ["beyonce", "beyoncé"],
+    "clues": [
+      "My stage name is just my actual last name, no gimmick needed.",
+      "I dropped an entire album with zero warning, breaking the internet in the process.",
+      "My daughter appeared on stage with me before she could talk.",
+      "A girl group made me famous before my solo career made me a legend.",
+      "Lemonade wasn't just a drink after I was done with the word."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2810_of_118%29_%2852946364598%29_%28best_crop%29.jpg/330px-Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2810_of_118%29_%2852946364598%29_%28best_crop%29.jpg",
+    "industry": ["music"],
+    "gender": "female",
+    "difficulty": "easy",
+    "country": "United States",
+    "nationality": "American",
+    "era": "Modern",
+    "primaryProfession": "Singer",
+    "tags": ["pop", "r&b", "songwriter", "performer"],
+    "region": "North America"
+  },
+  {
+    "_id": "person_087",
+    "name": "Rihanna",
+    "aliases": ["rihanna"],
+    "clues": [
+      "My skincare and makeup empire outearns most of my music at this point.",
+      "I paused music for years to become a billionaire a different way.",
+      "My home island still throws parades in my honor.",
+      "Umbrellas became a pop culture reference because of one of my songs.",
+      "Pregnancy runways became fashion statements, not something to hide, because of me."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Rihanna_Fenty_2018.png/330px-Rihanna_Fenty_2018.png",
+    "industry": ["music", "business", "fashion"],
+    "gender": "female",
+    "difficulty": "easy",
+    "country": "Barbados",
+    "nationality": "Barbadian",
+    "era": "Modern",
+    "primaryProfession": "Singer",
+    "tags": ["pop", "entrepreneur", "fashion", "beauty"],
+    "region": "Caribbean"
+  },
+  {
+    "_id": "person_088",
+    "name": "Adele",
+    "aliases": ["adele"],
+    "clues": [
+      "Heartbreak has literally funded my entire career, album after album.",
+      "My album titles are just numbers, my age at the time I wrote them.",
+      "My voice alone can fill an arena without a single dance move.",
+      "I've made entire rooms of celebrities cry during award show performances.",
+      "A divorce became one of my most commercially successful subjects."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Adele_2016.jpg/330px-Adele_2016.jpg",
+    "industry": ["music"],
+    "gender": "female",
+    "difficulty": "easy",
+    "country": "United Kingdom",
+    "nationality": "British",
+    "era": "Modern",
+    "primaryProfession": "Singer",
+    "tags": ["pop", "soul", "songwriter"],
+    "region": "Europe"
+  },
+  {
+    "_id": "person_089",
+    "name": "Ed Sheeran",
+    "aliases": ["ed sheeran"],
+    "clues": [
+      "My hair and my chart success are both famously ginger... well, one of those literally.",
+      "I wrote hits for other artists before audiences realized I sang too.",
+      "Loop pedals turned my solo shows into one-man orchestras.",
+      "Mathematical symbols became my entire album-naming strategy.",
+      "A wedding song of mine became the default choice for first dances everywhere."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Ed_Sheeran-6886_%28cropped_2%29.jpg/330px-Ed_Sheeran-6886_%28cropped_2%29.jpg",
+    "industry": ["music"],
+    "gender": "male",
+    "difficulty": "easy",
+    "country": "United Kingdom",
+    "nationality": "British",
+    "era": "Modern",
+    "primaryProfession": "Singer",
+    "tags": ["pop", "songwriter", "guitarist"],
+    "region": "Europe"
+  },
+  {
+    "_id": "person_090",
+    "name": "Lady Gaga",
+    "aliases": ["lady gaga", "gaga"],
+    "clues": [
+      "Meat wasn't just for dinner once I wore it to an award show.",
+      "My stage name is a tribute to a Queen song, not just a random phrase.",
+      "Acting Oscar nominations came for me almost as fast as my music ones.",
+      "My monster fans have their own dedicated nickname.",
+      "Piano bars in New York knew me before arenas ever did."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Lady_Gaga_at_Joe_Biden%27s_inauguration_%28cropped_5%29.jpg/330px-Lady_Gaga_at_Joe_Biden%27s_inauguration_%28cropped_5%29.jpg",
+    "industry": ["music", "film"],
+    "gender": "female",
+    "difficulty": "easy",
+    "country": "United States",
+    "nationality": "American",
+    "era": "Modern",
+    "primaryProfession": "Singer",
+    "tags": ["pop", "actor", "songwriter", "performer"],
+    "region": "North America"
+  },
+  {
+    "_id": "person_091",
+    "name": "Madonna",
+    "aliases": ["madonna"],
+    "clues": [
+      "Reinvention is basically my entire career strategy, decade after decade.",
+      "A conical bra became one of pop culture's most parodied fashion moments because of me.",
+      "My adopted children came from a country I've since built schools in.",
+      "Vogue wasn't just a magazine after I was done with the word.",
+      "I was crowned pop's queen before most of today's pop stars were even born."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/MadonnaO2171023_%2897_of_133%29_%2853269593787%29_%28cropped%29.jpg/330px-MadonnaO2171023_%2897_of_133%29_%2853269593787%29_%28cropped%29.jpg",
+    "industry": ["music", "film"],
+    "gender": "female",
+    "difficulty": "easy",
+    "country": "United States",
+    "nationality": "American",
+    "era": "Modern",
+    "primaryProfession": "Singer",
+    "tags": ["pop", "actor", "songwriter", "queen-of-pop"],
+    "region": "North America"
+  },
+  {
+    "_id": "person_092",
+    "name": "Elvis Presley",
+    "aliases": ["elvis presley", "elvis"],
+    "clues": [
+      "My hips got censored on live television for being too much for audiences.",
+      "A mansion named for its greenery became my most visited home, even after death.",
+      "Fried peanut butter sandwiches were apparently my favorite indulgence.",
+      "My death is still doubted by conspiracy theorists who insist I'm alive somewhere.",
+      "I served in the army mid-career, buzzcut and all, at the peak of my fame."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Elvis_Presley_promoting_Jailhouse_Rock.jpg/330px-Elvis_Presley_promoting_Jailhouse_Rock.jpg",
+    "industry": ["music", "film"],
+    "gender": "male",
+    "difficulty": "easy",
+    "country": "United States",
+    "nationality": "American",
+    "era": "Modern",
+    "primaryProfession": "Singer",
+    "tags": ["rock-and-roll", "actor", "legend"],
+    "region": "North America"
+  },
+  {
+    "_id": "person_093",
+    "name": "Bob Marley",
+    "aliases": ["bob marley", "marley"],
+    "clues": [
+      "My music carried a political message wrapped in a beat you couldn't help dancing to.",
+      "A specific religion tied to a former African emperor shaped my entire worldview.",
+      "Cancer took me young, despite years of denial about the diagnosis.",
+      "My dreadlocks became a symbol bigger than just a hairstyle.",
+      "One love, one song, became my most quoted phrase worldwide."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Bob_Marley_1976_press_photo.jpg/330px-Bob_Marley_1976_press_photo.jpg",
+    "industry": ["music"],
+    "gender": "male",
+    "difficulty": "medium",
+    "country": "Jamaica",
+    "nationality": "Jamaican",
+    "era": "Modern",
+    "primaryProfession": "Singer",
+    "tags": ["reggae", "songwriter", "rastafari"],
+    "region": "Caribbean"
+  },
+  {
+    "_id": "person_094",
+    "name": "Eminem",
+    "aliases": ["eminem", "marshall mathers"],
+    "clues": [
+      "My rap battles started in a city more famous for cars than for rhymes.",
+      "A movie loosely based on my own life won an Oscar for its opening song.",
+      "My daughter's name became a hit song title before she was even a teenager.",
+      "Controversy followed nearly every album I dropped, and I leaned into it.",
+      "My real name sounds nothing like the one on my album covers."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Eminem_2021_Color_Corrected.jpg/330px-Eminem_2021_Color_Corrected.jpg",
+    "industry": ["music"],
+    "gender": "male",
+    "difficulty": "easy",
+    "country": "United States",
+    "nationality": "American",
+    "era": "Modern",
+    "primaryProfession": "Rapper",
+    "tags": ["hip-hop", "rapper", "songwriter"],
+    "region": "North America"
+  },
+  {
+    "_id": "person_095",
+    "name": "Oprah Winfrey",
+    "aliases": ["oprah winfrey", "oprah"],
+    "clues": [
+      "My talk show gave away cars to an entire studio audience, all at once.",
+      "My book club could turn an unknown author into a bestseller overnight.",
+      "Poverty in my childhood is a story I've told almost as often as my success.",
+      "My own TV network carries just my initials.",
+      "Billionairess status came from being a host, not from tech or oil."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Oprah_Winfrey_2016.jpg/330px-Oprah_Winfrey_2016.jpg",
+    "industry": ["television", "business", "media"],
+    "gender": "female",
+    "difficulty": "medium",
+    "country": "United States",
+    "nationality": "American",
+    "era": "Modern",
+    "primaryProfession": "Television Host",
+    "tags": ["media", "entrepreneur", "philanthropist"],
+    "region": "North America"
+  },
+  {
+    "_id": "person_096",
+    "name": "Bill Gates",
+    "aliases": ["bill gates", "gates"],
+    "clues": [
+      "I dropped out of a prestigious university to build software instead.",
+      "My foundation now fights diseases more than I ever fought competitors.",
+      "I was once the richest man alive, purely from an operating system.",
+      "Vaccines became my second career after software made me famous.",
+      "My ex-wife and I still run our charity together despite the divorce."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Bill_Gates_at_the_European_Commission_-_P067383-987995_%28cropped%29_5.jpg/330px-Bill_Gates_at_the_European_Commission_-_P067383-987995_%28cropped%29_5.jpg",
+    "industry": ["technology", "business", "philanthropy"],
+    "gender": "male",
+    "difficulty": "easy",
+    "country": "United States",
+    "nationality": "American",
+    "era": "Modern",
+    "primaryProfession": "Entrepreneur",
+    "tags": ["software", "microsoft", "philanthropist"],
+    "region": "North America"
+  },
+  {
+    "_id": "person_097",
+    "name": "Mark Zuckerberg",
+    "aliases": ["mark zuckerberg", "zuckerberg"],
+    "clues": [
+      "My college dorm room project now connects billions of strangers.",
+      "A movie about my early days painted me as more ruthless than I'd like.",
+      "Virtual reality became my obsession after social media wasn't enough.",
+      "I renamed my entire company after a Greek letter.",
+      "Congress has grilled me more times than most executives ever get grilled."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/F20250904AH-2824_%2854778373111%29_%283x4_cropped_on_Zuckerberg_following_the_rule_of_thirds%29.jpg/330px-F20250904AH-2824_%2854778373111%29_%283x4_cropped_on_Zuckerberg_following_the_rule_of_thirds%29.jpg",
+    "industry": ["technology", "business"],
+    "gender": "male",
+    "difficulty": "easy",
+    "country": "United States",
+    "nationality": "American",
+    "era": "Modern",
+    "primaryProfession": "Entrepreneur",
+    "tags": ["social-media", "meta", "technology"],
+    "region": "North America"
+  },
+  {
+    "_id": "person_098",
+    "name": "Jeff Bezos",
+    "aliases": ["jeff bezos", "bezos"],
+    "clues": [
+      "An online bookstore became the reason nobody visits actual bookstores anymore.",
+      "Rockets became my hobby once online shopping got boring.",
+      "My ex-wife gave away more charity money than most billionaires ever will.",
+      "I once packed boxes myself during my company's earliest days.",
+      "Space tourism became a real thing partly because of my checkbook."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/260202-D-PM193-2205_SECWAR_Arsenal_of_Freedom_Tour_-_Florida_%283x4_cropped_on_Bezos_and_rotated%29.jpg/330px-260202-D-PM193-2205_SECWAR_Arsenal_of_Freedom_Tour_-_Florida_%283x4_cropped_on_Bezos_and_rotated%29.jpg",
+    "industry": ["business", "technology", "space"],
+    "gender": "male",
+    "difficulty": "easy",
+    "country": "United States",
+    "nationality": "American",
+    "era": "Modern",
+    "primaryProfession": "Entrepreneur",
+    "tags": ["amazon", "blue-origin", "ecommerce"],
+    "region": "North America"
+  },
+  {
+    "_id": "person_099",
+    "name": "Mukesh Ambani",
+    "aliases": ["mukesh ambani"],
+    "clues": [
+      "My family's home is technically a private skyscraper, floors of it.",
+      "Cheap mobile data became my gift to an entire country's internet habits.",
+      "My father built the empire I've since multiplied several times over.",
+      "Refineries and retail both fall under the same roof I run.",
+      "My kids' weddings made global headlines for their sheer scale."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Mukesh_Ambani.jpg",
+    "industry": ["business"],
+    "gender": "male",
+    "difficulty": "easy",
+    "country": "India",
+    "nationality": "Indian",
+    "era": "Modern",
+    "primaryProfession": "Businessman",
+    "tags": ["reliance", "telecom", "energy"],
+    "region": "Asia"
+  },
+  {
+    "_id": "person_100",
+    "name": "Sundar Pichai",
+    "aliases": ["sundar pichai"],
+    "clues": [
+      "I run search and video and email, but I don't own any of it personally.",
+      "My rise started in a small town in India, far from Silicon Valley.",
+      "A search engine and a video platform both report to me now.",
+      "Congress has questioned me about privacy about as often as they've questioned social media founders.",
+      "Alphabet, in my case, is a company, not a learning tool."
+    ],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Sundar_Pichai_-_2023_%28cropped%29.jpg/330px-Sundar_Pichai_-_2023_%28cropped%29.jpg",
+    "industry": ["technology", "business"],
+    "gender": "male",
+    "difficulty": "easy",
+    "country": "India",
+    "nationality": "Indian",
+    "era": "Modern",
+    "primaryProfession": "Business Executive",
+    "tags": ["google", "alphabet", "technology"],
+    "region": "Asia"
+  }
+]

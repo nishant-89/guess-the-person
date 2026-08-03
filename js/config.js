@@ -49,5 +49,23 @@ export const CONFIG = {
 
   // --- Last-clue extra guess ---
   // On the final hint, allow this many guess submissions instead of 1.
-  extraGuessesOnLastHint: 1 // i.e. 2 total guesses on the last clue
+  extraGuessesOnLastHint: 1, // i.e. 2 total guesses on the last clue
+
+  // --- Onboarding ---
+  // For a brand-new session's very first case, pick from this curated
+  // list of well-known, easier persons instead of a fully random pick —
+  // gives new players a confident first win instead of a coin-flip on
+  // an obscure name. Leave empty to disable and always pick randomly.
+  easyFirstCaseIds: ["person_001", "person_011", "person_013", "person_029", "person_033"],
+
+  // --- Difficulty presets ---
+  // Applied at runtime by the settings panel; takes effect from the NEXT
+  // round, not mid-round. Difficulty ONLY affects how lenient guess
+  // matching is — maxAttempts and minHintViewSeconds above are fixed
+  // constants regardless of difficulty, not part of these presets.
+  difficultyPresets: {
+    easy:   { fuzzyMinSimilarity: 0.60 },
+    normal: { fuzzyMinSimilarity: 0.72 },
+    hard:   { fuzzyMinSimilarity: 0.82 }
+  }
 };

@@ -14,6 +14,7 @@ import { PersonsAPI } from "./api.js";
 import { GameState } from "./gameState.js";
 import { isFuzzyMatch } from "./fuzzyMatch.js";
 import { UI } from "./ui.js";
+import { SessionPersistence } from "./sessionPersistence.js";
 
 async function bootstrap() {
   let persons = [];
@@ -27,7 +28,8 @@ async function bootstrap() {
   }
 
   const gameState = new GameState(persons, CONFIG, isFuzzyMatch);
-  new UI(gameState, CONFIG);
+  const savedSession = SessionPersistence.load();
+  new UI(gameState, CONFIG, { savedSession });
   // Game officially starts once the user submits the landing modal (see ui.js).
 }
 

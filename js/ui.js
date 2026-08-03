@@ -22,23 +22,91 @@
 import { EVENTS } from "./gameState.js";
 import { generateCodename } from "./wordbank.js";
 import { buildNameMask } from "./nameMask.js";
+import { SessionPersistence } from "./sessionPersistence.js";
+import { SoundManager } from "./soundManager.js";
+import { PersonalBest } from "./personalBest.js";
+
+const DIFFICULTY_STORAGE_KEY = "guessThePerson:difficulty";
+const FIRST_WRONG_TIP_KEY = "guessThePerson:hasSeenWrongGuessTip";
+const FIRST_WRONG_TIP_TEXT = "💡 Tip: spelling doesn't need to be exact, and just the last name works too.";
 
 export class UI {
   /**
    * @param {import('./gameState.js').GameState} gameState
    * @param {Object} config
+   * @param {Object} [options]
+   * @param {Object|null} [options.savedSession] - snapshot from SessionPersistence.load(), or null
    */
-  constructor(gameState, config) {
+  constructor(gameState, config, options = {}) {
     this.gs = gameState;
     this.config = config;
-    this.agentName = generateCodename();
+    this.savedSession = options.savedSession || null;
+    this.agentName = this.savedSession?.agentName || generateCodename();
     this._nextHintTimer = null;
+    this._streakToastTimer = null;
     this.viewIndex = 0;
     this._unlockedHints = new Set(); // hint indices whose wait timer has completed or been force-unlocked
+    this._pendingResumeHintUnlock = false;
+    this._roundMinHintViewSeconds = this.config.minHintViewSeconds; // snapshotted per round, see _onRoundStart
+
+    this.sound = new SoundManager();
+    this._pendingDifficulty = this._loadDifficultyPref();
+    this._applyDifficultyPreset(this._pendingDifficulty); // safe pre-round-1: nothing is in progress yet
 
     this._cacheDom();
     this._wireEvents();
     this._wireGameStateListeners();
+    this.el.bestTag.textContent = `Best: ${PersonalBest.get()}`;
+  }
+
+  _loadDifficultyPref() {
+    try {
+      return localStorage.getItem(DIFFICULTY_STORAGE_KEY) || "normal";
+    } catch (err) {
+      return "normal";
+    }
+  }
+
+  _saveDifficultyPref(value) {
+    try {
+      localStorage.setItem(DIFFICULTY_STORAGE_KEY, value);
+    } catch (err) {
+      // no-op — losing the persisted preference isn't fatal
+    }
+  }
+
+  _hasSeenFirstWrongTip() {
+    try {
+      return localStorage.getItem(FIRST_WRONG_TIP_KEY) === "true";
+    } catch (err) {
+      return true; // if storage is unavailable, don't risk showing it repeatedly
+    }
+  }
+
+  _markFirstWrongTipSeen() {
+    try {
+      localStorage.setItem(FIRST_WRONG_TIP_KEY, "true");
+    } catch (err) {
+      // no-op
+    }
+  }
+
+  /** Applies a difficulty preset to the shared config object. Safe to call repeatedly (idempotent). */
+  _applyDifficultyPreset(key) {
+    const preset = this.config.difficultyPresets?.[key];
+    if (!preset) return;
+    Object.assign(this.config, preset);
+  }
+
+  /**
+   * Starts the next round, applying any pending difficulty change first.
+   * Use this instead of calling gs.startNewRound() directly from UI actions,
+   * so a settings change made mid-round only takes effect from here on —
+   * never retroactively on the round already in progress.
+   */
+  _beginNextRound() {
+    this._applyDifficultyPreset(this._pendingDifficulty);
+    this.gs.startNewRound();
   }
 
   _cacheDom() {
@@ -46,6 +114,16 @@ export class UI {
     this.el = {
       agentName: byId("agentName"),
       scoreTag: byId("scoreTag"),
+      bestTag: byId("bestTag"),
+      dossier: byId("dossier"),
+      soundToggleBtn: byId("soundToggleBtn"),
+      settingsBtn: byId("settingsBtn"),
+      settingsBackdrop: byId("settingsBackdrop"),
+      settingsSoundBtn: byId("settingsSoundBtn"),
+      difficultySelect: byId("difficultySelect"),
+      closeSettingsBtn: byId("closeSettingsBtn"),
+      streakToast: byId("streakToast"),
+      giveUpBtn: byId("giveUpBtn"),
       personImg: byId("personImg"),
       noPhoto: byId("noPhoto"),
       photoScrim: byId("photoScrim"),
@@ -58,6 +136,7 @@ export class UI {
       nameMask: byId("nameMask"),
       hintDots: byId("hintDots"),
       feedback: byId("feedback"),
+      firstWrongTip: byId("firstWrongTip"),
       guessInput: byId("guessInput"),
       submitBtn: byId("submitBtn"),
       prevHintBtn: byId("prevHintBtn"),
@@ -71,10 +150,14 @@ export class UI {
       failCountdown: byId("failCountdown"),
       endOverlay: byId("endOverlay"),
       endScore: byId("endScore"),
+      endStats: byId("endStats"),
       playAgainBtn: byId("playAgainBtn"),
       modalBackdrop: byId("modalBackdrop"),
+      modalTitle: byId("modalTitle"),
+      modalSub: byId("modalSub"),
       agentInput: byId("agentInput"),
-      proceedBtn: byId("proceedBtn")
+      proceedBtn: byId("proceedBtn"),
+      newSessionBtn: byId("newSessionBtn")
     };
   }
 
@@ -85,22 +168,70 @@ export class UI {
     });
     this.el.prevHintBtn.addEventListener("click", () => this._goToPreviousHint());
     this.el.nextHintBtn.addEventListener("click", () => this._goToNextHint());
-    this.el.nextPersonBtn.addEventListener("click", () => this.gs.startNewRound());
+    this.el.nextPersonBtn.addEventListener("click", () => this._beginNextRound());
     this.el.playAgainBtn.addEventListener("click", () => {
       this.gs.reset();
-      this.gs.startNewRound();
+      this._beginNextRound();
+    });
+
+    this.el.giveUpBtn.addEventListener("click", () => this.gs.giveUp());
+
+    // --- Sound toggle (top bar quick-access) ---
+    this._syncSoundButtons();
+    this.el.soundToggleBtn.addEventListener("click", () => this._toggleSound());
+    this.el.settingsSoundBtn.addEventListener("click", () => this._toggleSound());
+
+    // --- Settings panel ---
+    this.el.settingsBtn.addEventListener("click", () => {
+      this.el.difficultySelect.value = this._pendingDifficulty;
+      this._syncSoundButtons();
+      this.el.settingsBackdrop.classList.remove("hidden");
+    });
+    this.el.closeSettingsBtn.addEventListener("click", () => {
+      this.el.settingsBackdrop.classList.add("hidden");
+    });
+    this.el.difficultySelect.addEventListener("change", (e) => {
+      this._pendingDifficulty = e.target.value;
+      this._saveDifficultyPref(this._pendingDifficulty);
+      // Not applied yet — see _beginNextRound(). Deliberately does not touch
+      // the round currently in progress, matching the note shown in the panel.
     });
 
     this.el.agentInput.value = this.agentName;
+
+    if (this.savedSession) {
+      this.el.modalSub.textContent = "Welcome back, agent. You have a case in progress — pick up where you left off, or start fresh.";
+      this.el.proceedBtn.textContent = "Resume Investigation →";
+      this.el.newSessionBtn.classList.remove("hidden");
+    }
+
     this.el.proceedBtn.addEventListener("click", () => {
       const name = this.el.agentInput.value.trim() || generateCodename();
       this.agentName = name;
       this.el.agentName.textContent = name;
       this.el.modalBackdrop.classList.add("hidden");
-      this.gs.startNewRound();
+      if (this.savedSession) {
+        // Only meaningful for a true mid-round resume — if the saved round
+        // had already ended (roundLocked), restore() starts a fresh round
+        // internally and this flag correctly should not apply there.
+        this._pendingResumeHintUnlock = !this.savedSession.roundLocked && !!this.savedSession.hintUnlocked;
+        this.gs.restore(this.savedSession);
+      } else {
+        this._beginNextRound();
+      }
     });
     this.el.agentInput.addEventListener("keydown", (e) => {
       if (e.key === "Enter") this.el.proceedBtn.click();
+    });
+
+    this.el.newSessionBtn.addEventListener("click", () => {
+      SessionPersistence.clear();
+      this.savedSession = null;
+      const name = this.el.agentInput.value.trim() || generateCodename();
+      this.agentName = name;
+      this.el.agentName.textContent = name;
+      this.el.modalBackdrop.classList.add("hidden");
+      this._beginNextRound();
     });
   }
 
@@ -112,11 +243,21 @@ export class UI {
     this.gs.on(EVENTS.ROUND_FAILED, (payload) => this._onRoundFailed(payload));
     this.gs.on(EVENTS.GAME_COMPLETE, (payload) => this._onGameComplete(payload));
     this.gs.on(EVENTS.SCORE_CHANGE, (payload) => this._onScoreChange(payload));
+    this.gs.on(EVENTS.STREAK_CHANGE, (payload) => this._onStreakChange(payload));
   }
 
   _submit() {
     if (this.el.guessInput.disabled) return;
     this.gs.submitGuess(this.el.guessInput.value);
+  }
+
+  /** Saves current progress so a refresh/tab-close can resume later. */
+  _persistSession() {
+    SessionPersistence.save({
+      ...this.gs.toSnapshot(),
+      agentName: this.agentName,
+      hintUnlocked: this._unlockedHints.has(this.gs.hintIndex)
+    });
   }
 
   /* ---------- Prev / Next hint navigation ---------- */
@@ -151,12 +292,20 @@ export class UI {
     this.el.caseCounter.textContent = `Case ${caseNumber} of ${totalCases}`;
     this.viewIndex = this.gs.hintIndex;
     this._unlockedHints.clear();
+    if (this._pendingResumeHintUnlock) {
+      this._unlockedHints.add(this.gs.hintIndex);
+      this._pendingResumeHintUnlock = false;
+    }
+    this._roundMinHintViewSeconds = this.config.minHintViewSeconds;
+    this.el.giveUpBtn.disabled = false;
     this._renderClueAt(this.viewIndex);
     this._renderAttempts();
     this._renderHintDots();
     this._clearFeedback();
     this._updateInteractivity();
     this._updateNavButtons();
+    this._persistSession();
+    this.sound.playHintAppear();
   }
 
   _onHintAdvance() {
@@ -166,11 +315,15 @@ export class UI {
     this._clearFeedback();
     this._updateInteractivity();
     this._updateNavButtons();
+    this._persistSession();
+    this.sound.playHintAppear();
   }
 
   _onGuessWrong({ attemptsUsed, canRetrySameHint, guessesRemainingThisHint }) {
     this._renderAttempts();
     this._applyPhotoReveal(attemptsUsed);
+    this.sound.playWrong();
+    this._triggerShake();
 
     // A wrong guess force-unlocks "Next Clue" immediately, regardless of the wait timer.
     this._unlockedHints.add(this.gs.hintIndex);
@@ -188,34 +341,87 @@ export class UI {
       this.el.submitBtn.disabled = true;
     }
 
+    if (!this._hasSeenFirstWrongTip()) {
+      this.el.firstWrongTip.textContent = FIRST_WRONG_TIP_TEXT;
+      this.el.firstWrongTip.classList.remove("hidden");
+      this._markFirstWrongTipSeen();
+    }
+
     this._updateNavButtons();
+    this._persistSession();
   }
 
   _onRoundSolved({ person, points, bonus, speedBonusApplied, hintIndex }) {
     this._disableAllInputs();
     this._clearNextHintTimer();
     this._revealPhotoFully();
+    this.sound.playSolved();
     this.el.successName.textContent = person.name;
     const bonusText = speedBonusApplied ? ` (includes +${bonus} speed bonus)` : "";
     this.el.successPoints.textContent = `+${points} points — solved on clue ${hintIndex + 1}${bonusText}`;
     this.el.successOverlay.classList.add("show");
+    this._persistSession();
   }
 
   _onRoundFailed({ person }) {
     this._disableAllInputs();
     this._clearNextHintTimer();
     this._revealPhotoFully();
+    this.sound.playFailed();
     this.el.failName.textContent = `It was: ${person.name}`;
     this.el.failOverlay.classList.add("show");
     this._runCountdown();
+    this._persistSession();
   }
 
-  _onGameComplete({ score }) {
+  _onGameComplete({ score, stats }) {
     this._hideAllOverlays();
     this._disableAllInputs();
     this._clearNextHintTimer();
+    SessionPersistence.clear();
+
     this.el.endScore.textContent = `Final score: ${score}`;
+    this._renderEndStats(stats);
+
+    const isNewBest = PersonalBest.update(score);
+    this.el.bestTag.textContent = `Best: ${PersonalBest.get()}`;
+    this._renderBestBanner(isNewBest, PersonalBest.get());
+
     this.el.endOverlay.classList.add("show");
+  }
+
+  _renderEndStats(stats) {
+    const totalRounds = (stats?.solvedCount || 0) + (stats?.failedCount || 0);
+    const bestSolveLabel = stats?.bestHintIndex != null ? `Clue ${stats.bestHintIndex + 1}` : "—";
+
+    this.el.endStats.innerHTML = `
+      <div class="stat-tile">
+        <span class="stat-value">${stats?.solvedCount || 0}/${totalRounds}</span>
+        <span class="stat-label">Solved</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-value">${bestSolveLabel}</span>
+        <span class="stat-label">Fastest Solve</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-value">${stats?.bestStreak || 0}</span>
+        <span class="stat-label">Best Streak</span>
+      </div>
+    `;
+  }
+
+  _renderBestBanner(isNewBest, bestScore) {
+    let banner = this.el.endOverlay.querySelector(".best-banner");
+    if (isNewBest) {
+      if (!banner) {
+        banner = document.createElement("div");
+        banner.className = "best-banner";
+        this.el.endStats.insertAdjacentElement("afterend", banner);
+      }
+      banner.textContent = `🏆 New personal best: ${bestScore}!`;
+    } else if (banner) {
+      banner.remove();
+    }
   }
 
   _onScoreChange({ score }) {
@@ -337,6 +543,7 @@ export class UI {
   _clearFeedback() {
     this.el.feedback.textContent = "";
     this.el.feedback.classList.remove("wrong");
+    this.el.firstWrongTip.classList.add("hidden");
   }
 
   _disableAllInputs() {
@@ -344,6 +551,7 @@ export class UI {
     this.el.submitBtn.disabled = true;
     this.el.prevHintBtn.disabled = true;
     this.el.nextHintBtn.disabled = true;
+    this.el.giveUpBtn.disabled = true;
   }
 
   _hideAllOverlays() {
@@ -362,7 +570,7 @@ export class UI {
       return;
     }
 
-    const seconds = this.config.minHintViewSeconds || 0;
+    const seconds = this._roundMinHintViewSeconds || 0;
     if (seconds <= 0) {
       this._unlockedHints.add(hintIndex);
       this.el.nextHintBtn.disabled = false;
@@ -400,7 +608,7 @@ export class UI {
       n -= 1;
       if (n <= 0) {
         clearInterval(timer);
-        this.gs.startNewRound();
+        this._beginNextRound();
       } else {
         this.el.failCountdown.textContent = n;
       }
@@ -409,5 +617,42 @@ export class UI {
 
   showErrorInClue(message) {
     this.el.clueText.textContent = message;
+  }
+
+  /* ---------- Sound ---------- */
+
+  _toggleSound() {
+    const muted = this.sound.toggleMute();
+    this._syncSoundButtons(muted);
+  }
+
+  _syncSoundButtons(mutedOverride) {
+    const muted = mutedOverride ?? this.sound.isMuted();
+    this.el.soundToggleBtn.textContent = muted ? "🔇" : "🔊";
+    this.el.soundToggleBtn.classList.toggle("muted", muted);
+    this.el.settingsSoundBtn.textContent = muted ? "Sound: Off" : "Sound: On";
+  }
+
+  /* ---------- Wrong-guess shake ---------- */
+
+  _triggerShake() {
+    this.el.dossier.classList.remove("shake");
+    // Force reflow so the animation can re-trigger on consecutive wrong guesses.
+    void this.el.dossier.offsetWidth;
+    this.el.dossier.classList.add("shake");
+  }
+
+  /* ---------- Streak toast ---------- */
+
+  _onStreakChange({ streak, isNewBest }) {
+    if (streak < 2) return; // not worth celebrating a streak of 0 or 1
+    this.el.streakToast.textContent = isNewBest
+      ? `New best streak: ${streak}!`
+      : `${streak} in a row!`;
+    this.el.streakToast.classList.add("show");
+    clearTimeout(this._streakToastTimer);
+    this._streakToastTimer = setTimeout(() => {
+      this.el.streakToast.classList.remove("show");
+    }, 2200);
   }
 }

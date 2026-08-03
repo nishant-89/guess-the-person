@@ -17,15 +17,21 @@
         <span>Case File No. 07</span>
         <h1>Who Am I?</h1>
       </div>
-      <div class="agent-tag">
-        Agent<br/>
-        <strong id="agentName">—</strong>
-        <span id="scoreTag">Score: 0</span>
+      <div class="topbar-right">
+        <button class="icon-btn" id="soundToggleBtn" title="Toggle sound" aria-label="Toggle sound">🔊</button>
+        <button class="icon-btn" id="settingsBtn" title="Settings" aria-label="Settings">⚙</button>
+        <div class="agent-tag">
+          Agent<br/>
+          <strong id="agentName">—</strong>
+          <span id="scoreTag">Score: 0</span>
+          <span id="bestTag">Best: 0</span>
+        </div>
       </div>
     </div>
 
     <div class="dossier" id="dossier">
       <div class="tab">Classified</div>
+      <div class="streak-toast hidden" id="streakToast"></div>
 
       <div class="photo-frame">
         <img id="personImg" src="" alt="Redacted subject photo" />
@@ -38,7 +44,10 @@
 
       <div class="case-meta">
         <span id="caseCounter">Person 1</span>
-        <div class="attempts" id="attemptsDots"></div>
+        <div class="case-meta-right">
+          <div class="attempts" id="attemptsDots"></div>
+          <button class="link-btn" id="giveUpBtn">Give up</button>
+        </div>
       </div>
 
       <div class="clue-tag">
@@ -49,6 +58,7 @@
       </div>
 
       <div class="feedback" id="feedback"></div>
+      <p class="first-wrong-tip hidden" id="firstWrongTip"></p>
 
       <div class="guess-row">
         <input type="text" id="guessInput" placeholder="Type your guess…" autocomplete="off" />
@@ -78,6 +88,7 @@
       <div class="stamp-overlay end-screen" id="endOverlay">
         <div class="stamp">File Complete</div>
         <div class="reveal-name" id="endScore"></div>
+        <div class="end-stats" id="endStats"></div>
         <div class="end-message">You've been through every case on file. Can you crack them faster next round and beat your score?</div>
         <button class="btn" id="playAgainBtn">Play Again</button>
       </div>
@@ -90,8 +101,8 @@
   <div class="modal-backdrop" id="modalBackdrop">
     <div class="modal">
       <div class="badge-icon">ID</div>
-      <h2>Field Agent Registration</h2>
-      <p class="sub">Every investigator needs a codename. Yours has been assigned — edit it if you like.</p>
+      <h2 id="modalTitle">Field Agent Registration</h2>
+      <p class="sub" id="modalSub">Every investigator needs a codename. Yours has been assigned — edit it if you like.</p>
       <label for="agentInput">Your codename</label>
       <input type="text" id="agentInput" maxlength="28" />
 
@@ -108,6 +119,28 @@
       </details>
 
       <button class="btn" id="proceedBtn">Begin Investigation →</button>
+      <button class="btn secondary hidden" id="newSessionBtn">Start a New Investigation Instead</button>
+    </div>
+  </div>
+
+  <!-- Settings modal -->
+  <div class="modal-backdrop hidden" id="settingsBackdrop">
+    <div class="modal">
+      <h2>Settings</h2>
+      <div class="setting-row">
+        <span class="setting-label">Sound</span>
+        <button class="btn secondary" id="settingsSoundBtn">Sound: On</button>
+      </div>
+      <div class="setting-row">
+        <span class="setting-label">Difficulty</span>
+        <select id="difficultySelect">
+          <option value="easy">Easy</option>
+          <option value="normal" selected>Normal</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <p class="settings-note">Difficulty only affects how lenient guess matching is, and takes effect from your next case, not the current one. Attempts and pacing stay the same at every level.</p>
+      <button class="btn" id="closeSettingsBtn">Close</button>
     </div>
   </div>
 
