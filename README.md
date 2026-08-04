@@ -259,6 +259,29 @@ already saved — both now correctly show 5s and 3 attempts.
   real data (Mahatma Gandhi's 3 clues: hints 4 and 5 gracefully repeat
   clue 3 rather than breaking).
 
+## Changelog — six UX polish fixes
+
+1. **Final clue (5th)**: "Next Clue" is now disabled and relabeled
+   "No More Clues" once you're on the last clue — skipping past it used
+   to silently fail the round, which was an easy accidental-loss trap.
+   Now the only paths forward are Submit or Give Up.
+2. **Final clue highlight**: the clue box gets a red-tinted border plus
+   a small "FINAL CLUE" badge next to "Clue 05/05" when you're on it.
+3. **Reveal name highlighted**: in both the "SOLVED" and "CASE CLOSED"
+   overlays, the person's name is now its own bold, larger, gold-colored
+   line — clearly set apart from the surrounding text ("It was:").
+4. **Submit button fade**: fades to ~72% opacity when the guess field is
+   empty (purely cosmetic — stays fully clickable/enabled either way,
+   per your request it shouldn't functionally change).
+5. **Fixed the photo flash**: reordered round-start so the photo is
+   re-obscured (blur + scrim reapplied) *before* the previous round's
+   overlay is hidden, not after. Previously there was a brief window
+   where the just-solved/failed person's fully-revealed photo was
+   exposed while the next photo was still loading. Verified at the DOM
+   level with 15ms-granularity polling — the photo is provably already
+   blurred at the exact millisecond the round transitions.
+6. **Removed the "Phase 1 Prototype" footer.**
+
 ## Known gap
 
 99 of 100 `imageUrl` values are still placeholders until you run

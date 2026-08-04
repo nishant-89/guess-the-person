@@ -334,6 +334,25 @@
     padding: 16px 18px 18px;
     position: relative;
     min-height: 84px;
+    transition: border-color 0.3s ease, background 0.3s ease;
+  }
+
+  .clue-tag.final-clue {
+    border: 1px dashed var(--red);
+    background: #fff8f0;
+  }
+
+  .clue-tag.final-clue .clue-label::after {
+    content: "FINAL CLUE";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 7px;
+    background: var(--red);
+    color: var(--manila);
+    border-radius: 2px;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    vertical-align: middle;
   }
 
   .clue-tag .clue-label {
@@ -431,6 +450,9 @@
   .btn:active:not(:disabled) { transform: translateY(0); }
   .btn:disabled { opacity: 0.35; cursor: not-allowed; }
 
+  /* Cosmetic only — button stays enabled/clickable, just a gentle visual cue. */
+  .btn.input-empty:not(:disabled) { opacity: 0.72; }
+
   .btn.secondary {
     background: transparent;
     color: var(--ink);
@@ -516,9 +538,18 @@
 
   .reveal-name {
     font-family: var(--font-type);
-    font-size: 20px;
+    font-size: 15px;
     color: var(--manila);
     margin-top: 18px;
+  }
+  .reveal-name .person-name {
+    display: block;
+    margin-top: 5px;
+    font-family: var(--font-label);
+    font-weight: 700;
+    font-size: 27px;
+    letter-spacing: 0.02em;
+    color: var(--gold);
   }
   .reveal-points {
     font-family: var(--font-label);

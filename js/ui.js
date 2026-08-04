@@ -133,6 +133,7 @@ export class UI {
       attemptsDots: byId("attemptsDots"),
       clueIndex: byId("clueIndex"),
       clueText: byId("clueText"),
+      clueTag: byId("clueTag"),
       nameMask: byId("nameMask"),
       hintDots: byId("hintDots"),
       feedback: byId("feedback"),
@@ -163,6 +164,8 @@ export class UI {
 
   _wireEvents() {
     this.el.submitBtn.addEventListener("click", () => this._submit());
+    this.el.guessInput.addEventListener("input", () => this._updateSubmitFade());
+    this._updateSubmitFade();
     this.el.guessInput.addEventListener("keydown", (e) => {
       if (e.key === "Enter") this._submit();
     });
@@ -286,9 +289,12 @@ export class UI {
   /* ---------- Renderers ---------- */
 
   _onRoundStart({ person, caseNumber, totalCases }) {
+    // Re-obscure the photo FIRST, before the overlay covering it is removed —
+    // otherwise the previous round's fully-revealed (unblurred) photo is
+    // exposed for a brief flash while the new image is still loading.
+    this._resetPhotoReveal();
     this._hideAllOverlays();
     this._loadImage(person.imageUrl);
-    this._resetPhotoReveal();
     this.el.caseCounter.textContent = `Case ${caseNumber} of ${totalCases}`;
     this.viewIndex = this.gs.hintIndex;
     this._unlockedHints.clear();
@@ -333,6 +339,7 @@ export class UI {
       this.el.feedback.textContent = `Not a match — one more guess on this clue (${guessesRemainingThisHint} left).`;
       this.el.feedback.classList.add("wrong");
       this.el.guessInput.value = "";
+      this._updateSubmitFade();
       this.el.guessInput.focus();
     } else {
       this.el.feedback.textContent = "Not a match — logged as a miss.";
@@ -356,7 +363,7 @@ export class UI {
     this._clearNextHintTimer();
     this._revealPhotoFully();
     this.sound.playSolved();
-    this.el.successName.textContent = person.name;
+    this._setRevealName(this.el.successName, "", person.name);
     const bonusText = speedBonusApplied ? ` (includes +${bonus} speed bonus)` : "";
     this.el.successPoints.textContent = `+${points} points — solved on clue ${hintIndex + 1}${bonusText}`;
     this.el.successOverlay.classList.add("show");
@@ -368,7 +375,7 @@ export class UI {
     this._clearNextHintTimer();
     this._revealPhotoFully();
     this.sound.playFailed();
-    this.el.failName.textContent = `It was: ${person.name}`;
+    this._setRevealName(this.el.failName, "It was:", person.name);
     this.el.failOverlay.classList.add("show");
     this._runCountdown();
     this._persistSession();
@@ -433,8 +440,10 @@ export class UI {
   /** Renders the clue text + name mask for an arbitrary hint index (browsing-aware). */
   _renderClueAt(index) {
     const p = this.gs.currentPerson;
+    const isFinal = index === this.config.maxHints - 1;
     this.el.clueIndex.textContent = String(index + 1).padStart(2, "0");
     this.el.clueText.textContent = this.gs.getClueText(index);
+    this.el.clueTag.classList.toggle("final-clue", isFinal);
 
     const mask = buildNameMask(p.name, index, this.config.nameMaskStartHintIndex);
     if (mask) {
@@ -463,6 +472,7 @@ export class UI {
     if (guessAvailable) {
       this._clearFeedback();
       this.el.guessInput.value = "";
+      this._updateSubmitFade();
       this.el.guessInput.focus();
     }
   }
@@ -470,6 +480,19 @@ export class UI {
   /** Updates Previous/Next button state based on browsing position vs. the real frontier. */
   _updateNavButtons() {
     this.el.prevHintBtn.disabled = this.viewIndex <= 0;
+
+    const atFrontier = this.viewIndex === this.gs.hintIndex;
+    const isFinalClue = this.viewIndex === this.config.maxHints - 1;
+
+    if (atFrontier && isFinalClue) {
+      // No further clue to advance to — skipping here would just fail the
+      // round, which is confusing as a default action. Force a deliberate
+      // choice: submit a guess, or Give Up.
+      this._clearNextHintTimer();
+      this.el.nextHintBtn.disabled = true;
+      this.el.nextHintBtn.textContent = "No More Clues";
+      return;
+    }
 
     if (this.viewIndex < this.gs.hintIndex) {
       // Browsing a past hint — Next is always free (already passed its wait).
@@ -538,6 +561,22 @@ export class UI {
     this.el.photoScrim.classList.add("revealed");
     this.el.redactTop.style.opacity = "0";
     this.el.redactBottom.style.opacity = "0";
+  }
+
+  /** Purely cosmetic — submit stays enabled/clickable even when empty, just visually faded. */
+  _updateSubmitFade() {
+    const empty = this.el.guessInput.value.trim().length === 0;
+    this.el.submitBtn.classList.toggle("input-empty", empty);
+  }
+
+  /** Builds "{prefix} {Name}" with the name in its own highlighted span, without using innerHTML. */
+  _setRevealName(container, prefix, name) {
+    container.textContent = "";
+    if (prefix) container.append(prefix + " ");
+    const nameSpan = document.createElement("span");
+    nameSpan.className = "person-name";
+    nameSpan.textContent = name;
+    container.append(nameSpan);
   }
 
   _clearFeedback() {
