@@ -35,7 +35,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 32px 16px 64px;
+    padding: 20px 16px 20px;
   }
 
   .wrap {
@@ -79,7 +79,7 @@
     line-height: 1.5;
   }
 
-  .agent-tag strong {
+  .agent-tag .agent-name {
     display: block;
     color: var(--gold);
     font-size: 14px;
@@ -440,7 +440,7 @@
     display: flex;
     justify-content: space-between;
     gap: 8px;
-    margin: 12px 24px 26px;
+    margin: 12px 24px 18px;
   }
 
   .feedback {
@@ -796,7 +796,7 @@
 
   footer.credit {
     text-align: center;
-    margin-top: 22px;
+    margin-top: 10px;
     font-family: var(--font-label);
     font-size: 10px;
     letter-spacing: 0.08em;

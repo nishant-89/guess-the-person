@@ -434,7 +434,7 @@ export class UI {
   _renderClueAt(index) {
     const p = this.gs.currentPerson;
     this.el.clueIndex.textContent = String(index + 1).padStart(2, "0");
-    this.el.clueText.textContent = p.clues[index] || p.clues[p.clues.length - 1];
+    this.el.clueText.textContent = this.gs.getClueText(index);
 
     const mask = buildNameMask(p.name, index, this.config.nameMaskStartHintIndex);
     if (mask) {

@@ -240,6 +240,25 @@ even for players who never touched settings themselves. Verified fixed
 in both a fresh browser and one with a stale `difficulty: hard` value
 already saved — both now correctly show 5s and 3 attempts.
 
+## Changelog — level-based clue ordering + enriched dataset live
+
+- **`data/persons.json` is now the enriched dataset** (100 records, all
+  the extra fields from `persons_enriched.json`: `primaryDomain`,
+  `fameScore`, `awards`, `relatedPeople`, etc. — not used by gameplay
+  yet, but present for future phases as agreed).
+- **`clues` shape changed**: from a flat array of strings to
+  `[{level, text}, ...]`. Display order is now driven by `level`, not by
+  position in the JSON array — verified with a test using deliberately
+  scrambled array order that still displayed 1st→5th correctly by level.
+  **This means clue order can be changed later purely by editing `level`
+  values in the JSON — zero code changes needed.**
+- `gameState.js` gained `getClueText(index)` (sorts by level once per
+  round, caches it) — this is now the only way `ui.js` reads clue text;
+  it no longer touches `person.clues` directly.
+- Confirmed the existing short-clue fallback still works correctly with
+  real data (Mahatma Gandhi's 3 clues: hints 4 and 5 gracefully repeat
+  clue 3 rather than breaking).
+
 ## Known gap
 
 99 of 100 `imageUrl` values are still placeholders until you run

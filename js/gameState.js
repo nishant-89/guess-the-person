@@ -38,6 +38,7 @@ export class GameState {
 
     this.usedIds = new Set();
     this.currentPerson = null;
+    this._sortedClueTexts = [];
     this.hintIndex = 0;
     this.attemptsLeft = config.maxAttempts;
     this.guessesUsedOnHint = 0;
@@ -86,6 +87,30 @@ export class GameState {
   }
 
   /**
+   * Returns the clue text for a given hint index, ordered by each clue's
+   * `level` field (not by its raw position in the JSON array) — so
+   * reordering which clue shows first/second/etc. is purely a data change
+   * (edit `level` values in persons.json), never a code change.
+   * Falls back to the last available clue if a person has fewer clues
+   * than config.maxHints.
+   * @param {number} index - 0-based hint index
+   * @returns {string}
+   */
+  getClueText(index) {
+    const sorted = this._sortedClueTexts;
+    if (!sorted || sorted.length === 0) return "";
+    return sorted[index] ?? sorted[sorted.length - 1];
+  }
+
+  /** Builds and caches the level-sorted clue text list for the current person. */
+  _cacheSortedClues(person) {
+    const clues = person?.clues || [];
+    this._sortedClueTexts = [...clues]
+      .sort((a, b) => a.level - b.level)
+      .map(c => c.text);
+  }
+
+  /**
    * Starts a new round with a random not-yet-used person, or emits GAME_COMPLETE.
    * The very first round of a brand-new session (nothing played yet) picks
    * from `config.easyFirstCaseIds` if provided, so new players get a
@@ -113,6 +138,7 @@ export class GameState {
     this.usedIds.add(person._id);
 
     this.currentPerson = person;
+    this._cacheSortedClues(person);
     this.hintIndex = 0;
     this.attemptsLeft = this.config.maxAttempts;
     this.guessesUsedOnHint = 0;
@@ -313,6 +339,7 @@ export class GameState {
     }
 
     this.currentPerson = person;
+    this._cacheSortedClues(person);
     this.hintIndex = saved.hintIndex || 0;
     this.attemptsLeft = saved.attemptsLeft ?? this.config.maxAttempts;
     this.guessesUsedOnHint = saved.guessesUsedOnHint || 0;
