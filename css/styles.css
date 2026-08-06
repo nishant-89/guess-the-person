@@ -313,6 +313,11 @@
     cursor: not-allowed;
   }
 
+  .link-btn.confirming {
+    color: var(--red);
+    font-weight: 600;
+  }
+
   .attempts .dot {
     width: 9px;
     height: 9px;

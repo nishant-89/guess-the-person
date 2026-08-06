@@ -51,6 +51,12 @@ export const CONFIG = {
   // On the final hint, allow this many guess submissions instead of 1.
   extraGuessesOnLastHint: 1, // i.e. 2 total guesses on the last clue
 
+  // --- Auto-advance after a miss ---
+  // On a wrong guess that doesn't end the round (not a same-hint retry,
+  // not out of attempts), automatically move to the next clue after this
+  // many seconds instead of waiting indefinitely for a manual click.
+  wrongGuessAutoAdvanceSeconds: 3,
+
   // --- Onboarding ---
   // For a brand-new session's very first case, pick from this curated
   // list of well-known, easier persons instead of a fully random pick —

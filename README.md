@@ -282,6 +282,56 @@ already saved — both now correctly show 5s and 3 attempts.
    blurred at the exact millisecond the round transitions.
 6. **Removed the "Phase 1 Prototype" footer.**
 
+## Changelog — Give Up confirmation (Phase 1 final change)
+
+"Give up" now requires two clicks: the first changes the button to
+**"Sure? Click again"** (highlighted red) and arms a 3-second window; a
+second click within that window actually ends the round. If you don't
+click again, it silently reverts back to "Give up" — no accidental
+round-loss from a single misclick. Confirmed with 4 scenarios: single
+click doesn't end the round, second click within the window does, letting
+the window expire reverts cleanly, and a fresh click after reverting
+correctly re-asks rather than immediately ending the round.
+
+## Changelog — final Phase 1 fixes: auto-advance + mask prefill
+
+1. **Auto-advance after a miss**: a wrong guess that doesn't retry or end
+   the round now shows "Not a match — logged as a miss. Next clue in
+   3…2…1…" and automatically moves to the next clue — no more manual
+   "Next Clue" click required. Manually clicking it early still works and
+   correctly cancels the pending auto-advance (verified: no double-skip).
+   Configurable via `config.wrongGuessAutoAdvanceSeconds` (default 3;
+   set to 0 to disable). Retry-eligible misses on the last clue are
+   unaffected — you still get your second attempt there, no auto-skip.
+2. **Mask-letter auto-fill**: from clue 4 onward, once the name mask
+   reveals a letter (e.g. "S _ _ _ _ _"), that letter is now pre-filled
+   into the guess box automatically instead of leaving it blank.
+
+Both verified in a live browser end-to-end, including the edge case
+where a miss on the final clue (which fails the round) doesn't leave a
+stray auto-advance timer running underneath the fail overlay.
+
+## Changelog — final two Phase 1 fixes
+
+1. **Auto-advance after a miss**: a wrong guess that doesn't offer a retry
+   and doesn't end the round now shows a live countdown in the feedback
+   line ("Not a match — logged as a miss. Next clue in 3…2…1…") and
+   automatically moves to the next clue — no more waiting indefinitely
+   for a manual click. Configurable via `wrongGuessAutoAdvanceSeconds`
+   in `config.js` (default 3). Manually clicking "Next Clue" or "Give
+   up" during the countdown correctly cancels it — verified no
+   double-advance and no race condition in either case.
+2. **Mask letter auto-filled into the guess box**: from clue 4 onward,
+   the one revealed letter (e.g. "S" for "S _ _ _ _ _...") is now
+   pre-filled into the guess input automatically instead of making you
+   retype it. You can keep typing right after it. Also applies on the
+   last clue's second-guess retry. Verified the input stays fully
+   editable and the submit-fade state updates correctly.
+
+Both were tested end-to-end in a real browser across every interaction
+path (manual cancel, give-up-mid-countdown, last-hint retry) before
+being called done.
+
 ## Known gap
 
 99 of 100 `imageUrl` values are still placeholders until you run

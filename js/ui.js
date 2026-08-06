@@ -177,7 +177,7 @@ export class UI {
       this._beginNextRound();
     });
 
-    this.el.giveUpBtn.addEventListener("click", () => this.gs.giveUp());
+    this.el.giveUpBtn.addEventListener("click", () => this._handleGiveUpClick());
 
     // --- Sound toggle (top bar quick-access) ---
     this._syncSoundButtons();
@@ -203,7 +203,7 @@ export class UI {
     this.el.agentInput.value = this.agentName;
 
     if (this.savedSession) {
-      this.el.modalSub.textContent = "Welcome back, agent. You have a case in progress — pick up where you left off, or start fresh.";
+      this.el.modalSub.textContent = "Welcome back agent. You have a case in progress, pick up where you left off, or start fresh.";
       this.el.proceedBtn.textContent = "Resume Investigation →";
       this.el.newSessionBtn.classList.remove("hidden");
     }
@@ -263,10 +263,58 @@ export class UI {
     });
   }
 
+  /** Auto-advances to the next clue a few seconds after a miss that doesn't retry or end the round. */
+  _scheduleAutoAdvance() {
+    this._clearAutoAdvance();
+    let remaining = this.config.wrongGuessAutoAdvanceSeconds || 0;
+    if (remaining <= 0) return;
+    const render = () => {
+      this.el.feedback.textContent = `Not a match, logged as a miss. Next clue in ${remaining}…`;
+    };
+    render();
+    this._autoAdvanceTimer = setInterval(() => {
+      remaining -= 1;
+      if (remaining <= 0) {
+        this._clearAutoAdvance();
+        this.gs.advanceHint();
+      } else {
+        render();
+      }
+    }, 1000);
+  }
+
+  _clearAutoAdvance() {
+    if (this._autoAdvanceTimer) {
+      clearInterval(this._autoAdvanceTimer);
+      this._autoAdvanceTimer = null;
+    }
+  }
+
+  /** First click asks for confirmation; a second click within 3s actually gives up. */
+  _handleGiveUpClick() {
+    if (this._giveUpConfirming) {
+      this._clearGiveUpConfirm();
+      this.gs.giveUp();
+      return;
+    }
+    this._giveUpConfirming = true;
+    this.el.giveUpBtn.textContent = "Sure? Click again";
+    this.el.giveUpBtn.classList.add("confirming");
+    this._giveUpConfirmTimer = setTimeout(() => this._clearGiveUpConfirm(), 3000);
+  }
+
+  _clearGiveUpConfirm() {
+    this._giveUpConfirming = false;
+    clearTimeout(this._giveUpConfirmTimer);
+    this.el.giveUpBtn.textContent = "Give up";
+    this.el.giveUpBtn.classList.remove("confirming");
+  }
+
   /* ---------- Prev / Next hint navigation ---------- */
 
   _goToPreviousHint() {
     if (this.viewIndex <= 0) return;
+    this._clearAutoAdvance();
     this.viewIndex -= 1;
     this._renderClueAt(this.viewIndex);
     this._updateInteractivity();
@@ -274,6 +322,7 @@ export class UI {
   }
 
   _goToNextHint() {
+    this._clearAutoAdvance();
     if (this.viewIndex < this.gs.hintIndex) {
       // Browsing forward through already-seen hints — free, no timer.
       this.viewIndex += 1;
@@ -295,6 +344,7 @@ export class UI {
     this._resetPhotoReveal();
     this._hideAllOverlays();
     this._loadImage(person.imageUrl);
+    this._clearAutoAdvance();
     this.el.caseCounter.textContent = `Case ${caseNumber} of ${totalCases}`;
     this.viewIndex = this.gs.hintIndex;
     this._unlockedHints.clear();
@@ -304,6 +354,7 @@ export class UI {
     }
     this._roundMinHintViewSeconds = this.config.minHintViewSeconds;
     this.el.giveUpBtn.disabled = false;
+    this._clearGiveUpConfirm();
     this._renderClueAt(this.viewIndex);
     this._renderAttempts();
     this._renderHintDots();
@@ -315,6 +366,7 @@ export class UI {
   }
 
   _onHintAdvance() {
+    this._clearAutoAdvance();
     this.viewIndex = this.gs.hintIndex;
     this._renderClueAt(this.viewIndex);
     this._renderHintDots();
@@ -336,16 +388,15 @@ export class UI {
     this._clearNextHintTimer();
 
     if (canRetrySameHint) {
-      this.el.feedback.textContent = `Not a match — one more guess on this clue (${guessesRemainingThisHint} left).`;
+      this.el.feedback.textContent = `Not a match, one more guess on this clue (${guessesRemainingThisHint} left).`;
       this.el.feedback.classList.add("wrong");
-      this.el.guessInput.value = "";
-      this._updateSubmitFade();
+      this._seedGuessInput(this.gs.hintIndex);
       this.el.guessInput.focus();
     } else {
-      this.el.feedback.textContent = "Not a match — logged as a miss.";
       this.el.feedback.classList.add("wrong");
       this.el.guessInput.disabled = true;
       this.el.submitBtn.disabled = true;
+      this._scheduleAutoAdvance();
     }
 
     if (!this._hasSeenFirstWrongTip()) {
@@ -361,11 +412,12 @@ export class UI {
   _onRoundSolved({ person, points, bonus, speedBonusApplied, hintIndex }) {
     this._disableAllInputs();
     this._clearNextHintTimer();
+    this._clearAutoAdvance();
     this._revealPhotoFully();
     this.sound.playSolved();
     this._setRevealName(this.el.successName, "", person.name);
     const bonusText = speedBonusApplied ? ` (includes +${bonus} speed bonus)` : "";
-    this.el.successPoints.textContent = `+${points} points — solved on clue ${hintIndex + 1}${bonusText}`;
+    this.el.successPoints.textContent = `+${points} points, solved on clue ${hintIndex + 1}${bonusText}`;
     this.el.successOverlay.classList.add("show");
     this._persistSession();
   }
@@ -373,6 +425,7 @@ export class UI {
   _onRoundFailed({ person }) {
     this._disableAllInputs();
     this._clearNextHintTimer();
+    this._clearAutoAdvance();
     this._revealPhotoFully();
     this.sound.playFailed();
     this._setRevealName(this.el.failName, "It was:", person.name);
@@ -455,13 +508,29 @@ export class UI {
     }
   }
 
+  /** Returns the single letter the name mask has already revealed for this hint, or "" if none. */
+  _getMaskPrefill(index) {
+    const p = this.gs.currentPerson;
+    if (!p) return "";
+    const mask = buildNameMask(p.name, index, this.config.nameMaskStartHintIndex);
+    if (!mask) return "";
+    const letters = mask.replace(/[^a-zA-Z]/g, "");
+    return letters ? letters[0] : "";
+  }
+
+  /** Resets the guess input, pre-filled with the mask's revealed letter if the hint has one. */
+  _seedGuessInput(index) {
+    this.el.guessInput.value = this._getMaskPrefill(index);
+    this._updateSubmitFade();
+  }
+
   /** Enables/disables guessing based on whether the user is viewing the live frontier or reviewing a past hint. */
   _updateInteractivity() {
     const atFrontier = this.viewIndex === this.gs.hintIndex;
     if (!atFrontier) {
       this.el.guessInput.disabled = true;
       this.el.submitBtn.disabled = true;
-      this.el.feedback.textContent = "Reviewing a past clue — go to the latest clue to guess.";
+      this.el.feedback.textContent = "Reviewing a past clue, go to the latest clue to guess.";
       this.el.feedback.classList.remove("wrong");
       return;
     }
@@ -471,8 +540,7 @@ export class UI {
     this.el.submitBtn.disabled = !guessAvailable;
     if (guessAvailable) {
       this._clearFeedback();
-      this.el.guessInput.value = "";
-      this._updateSubmitFade();
+      this._seedGuessInput(this.viewIndex);
       this.el.guessInput.focus();
     }
   }
